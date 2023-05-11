@@ -1,0 +1,35 @@
+{
+  "description": "A FDO acting as a digital twin on the Internet for a specific physical specimen in a museum collection",
+  "name": "digitalSpecimen",
+  "provenance": {
+    "authors": [
+      {
+        "details": "https://ror.org/0566bfb96",
+        "identifiedUsing": "ORCiD",
+        "name": "https://orcid.org/0000-0001-8050-0299"
+      }
+    ],
+    "creationDate": "2022-08-11T14:36:21.697Z",
+    "lastModificationDate": "2022-08-11T14:44:25.138Z"
+  },
+  "representationAndSemantics": {
+    "default": {
+      "type": "string",
+      "value": "digitalSpecimen"
+    },
+    "property": {
+      "dataType": "string",
+      "restriction": {
+        "key": "regexp",
+        "value": "\\w"
+      }
+    }
+  },
+  "standards": [
+    {
+      "issuer": "DTR",
+      "name": "openDS"
+    }
+  ],
+  "status": "testing"
+}
