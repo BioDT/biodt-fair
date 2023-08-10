@@ -1,0 +1,251 @@
+{
+  "@context": [
+    "http://doi.org/10.5063/schema/codemeta-2.0",
+    "http://w3id.org/ro/crate/1.2-DRAFT/context"
+  ],
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "about": {"@id": "./"},
+      "conformsTo": {"@id": "http://w3id.org/ro/crate/1.2-DRAFT"},
+      "author": {"@id": "http://orcid.org/0000-0003-0401-5122"}
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "SoftwareApplication"],
+      "name": "BEEHAVE",
+      "description": "BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes.\n\nThe purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.",
+      "version": "1.0.0",
+      "dateCreated": "2014-03-04",
+      "datePublished": "2014-03-04",
+      "dateModified": "2014-03-04",
+      "license": {"@id": "http://www.gnu.org/licenses/gpl-3.0-standalone.html"},
+      "author": [
+        {"@id": "http://orcid.org/0000-0003-0791-7164"},
+        {"@id": "http://orcid.org/0000-0002-3221-9512"},
+        {"@id": "http://orcid.org/0000-0003-2338-4636"}
+      ],
+      "publisher": {"@id": "http://orcid.org/0000-0003-0791-7164"},
+      "citation": {"@id": "http://doi.org/10.1111/1365-2664.12222"},
+      "applicationCategory": "Ecology",
+      "keywords": [
+        "Apis mellifera",
+        "colony decline",
+        "cross-level interactions",
+        "feedbacks",
+        "foraging",
+        "modelling",
+        "multiple stressors",
+        "multi-agent simulation",
+        "predictive systems ecology",
+        "Varroa destructor"
+      ],
+      "funder": {"@id": "http://ror.org/00cwqg982"},
+      "funding": "BB/H00114X",
+      "releaseNotes": "To run BEEHAVE, please download and install NetLogo (http://ccl.northwestern.edu/netlogo/) first.\nOpen 1_BEEHAVE-MODEL_Beehave2013.nlogo, click \"Default\", \"Setup\" and \"Run\".\nClick \"varroa\" and \"beekeeping\" to add varroa mites and beekeeping practices.\nPlay with the model by changing e.g. nectar quantity (QUANTITY_R/G_l), concentration (CONC_R/G), pollen availability (POLLEN_R/G_kg), and distance of the two default food patches.\nThe user manual (2_BEEHAVE_Manual.pdf) provides a detailed description of the BEEHAVE model.",
+      "developmentStatus": "inactive",
+      "isPartOf": "http://beehave-model.net/",
+      "programmingLanguage": "Netlogo",
+      "runtimePlatform": "Netlogo",
+      "operatingSystem": ["Linux", "Windows", "MacOS"],
+      "softwareRequirements": "Netlogo 5.3.1",
+      "downloadUrl": "http://beehave-model.net/?smd_process_download=1&download_id=971",
+      "hasPart": [
+        {"@id": "0_ReadMe.txt"},
+        {"@id": "1_BEEHAVE-MODEL_Beehave2013.nlogo"},
+        {"@id": "2_BEEHAVE_Manual.pdf"},
+        {"@id": "3_BEEHAVE_ODD-model-description.pdf"},
+        {"@id": "4_BEEHAVE_Variables.xlsx"},
+        {"@id": "5_BEEHAVE_Sensitivity.pdf"},
+        {"@id": "6_BEEHAVE_Copyright&Licenc_updated_2016-10-25.pdf"},
+        {"@id": "Input_2-1_FoodFlow.txt"},
+        {"@id": "Input_2-1_FoodFlow_RRes.txt"}
+      ]
+    },
+    {
+      "@id": "0_ReadMe.txt",
+      "@type": "File",
+      "name": "README file",
+      "description": "Plain text file with instructions on how to run the model and directions to get more information.",
+      "contentSize": "534 bytes",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "1_BEEHAVE-MODEL_Beehave2013.nlogo",
+      "@type": ["File", "SoftwareSourceCode"],
+      "name": "BEEHAVE Netlogo model",
+      "description": "Source code of the model written according to Netlogo syntax.",
+      "programmingLanguage": "Netlogo",
+      "contentSize": "348 kB",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "2_BEEHAVE_Manual.pdf",
+      "@type": "File",
+      "name": "Appendix S2: The BEEHAVE user manual",
+      "description": "User manual providing an overview of the interface, a guide to different modelling scenarios, and other topics such as version control and documentation of experiments.",
+      "contentSize": "3,3 MB",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@id": "3_BEEHAVE_ODD-model-description.pdf",
+      "@type": "File",
+      "name": "BEEHAVE Model Description",
+      "description": "The model description follows the ODD (Overview, Design concepts, Details) protocol, a standard format for describing individual-based models.",
+      "contentSize": "1,5 MB",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@id": "4_BEEHAVE_Variables.xlsx",
+      "@type": "File",
+      "name": "BEEHAVE Variables",
+      "description": "Comprehensive list of all variables, procedures and interface options for the BEEHAVE model. Includes references to the model, but also to other documents, such as the Model Description or journal article.",
+      "contentSize": "212,3 kB",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "5_BEEHAVE_Sensitivity.pdf",
+      "@type": "File",
+      "name": "Appendix S4: Sensitivity Analyses",
+      "description": "Sensitivity analyses for different parameters with and without varroa.",
+      "contentSize": "967,8 kB",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@id": "6_BEEHAVE_Copyright&Licenc_updated_2016-10-25.pdf",
+      "@type": ["File", "CreativeWork"],
+      "name": "Copyright and licence of Beehave (2013), the implementation of the model BEEHAVE",
+      "description": "The GNU General Public License v3 included as a file.",
+      "contentSize": "218,6 kB",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@id": "Input_2-1_FoodFlow.txt",
+      "@type": "File",
+      "name": "Input 2-1 Food Flow",
+      "description": "Input data used by the model.",
+      "contentSize": "93,6 kB",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "Input_2-1_FoodFlow_RRes.txt",
+      "@type": "File",
+      "name": "Input 2-1 Food Flow RRes",
+      "description": "Input data used by the model.",
+      "contentSize": "3,9 MB",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "http://doi.org/10.1111/1365-2664.12222",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {"@id": "http://orcid.org/0000-0003-0791-7164"},
+        {"@id": "http://orcid.org/0000-0002-3221-9512"},
+        {"@id": "http://orcid.org/0000-0002-9937-172X"}
+      ],
+      "identifier": "http://doi.org/10.1111/1365-2664.12222",
+      "issn": "0021-8901",
+      "name": "BEEHAVE: a systems model of honeybee colony dynamics and foraging to explore multifactorial causes of colony failure",
+      "journal": "Journal of Applied Ecology",
+      "datePublished": "2014-03-04"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0791-7164",
+      "@type": "Person",
+      "name": "Matthias A. Becher",
+      "email": "m.a.becher@exeter.ac.uk",
+      "affiliation": [
+        {"@id":  "http://ror.org/03yghzc09"},
+        {"@id":  "http://ror.org/0347fy350"}
+      ]
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3221-9512",
+      "@type": "Person",
+      "name": "Volker Grimm",
+      "email": "volker.grimm@ufz.de",
+      "affiliation": [
+        {"@id": "http://ror.org/00cwqg982"},
+        {"@id": "http://ror.org/000h6jb29"},
+        {"@id": "http://ror.org/03bnmw459"}
+      ]
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-2338-4636",
+      "@type": "Person",
+      "name": "Jürgen Groeneveld",
+      "email": "juergen.groeneveld@ufz.de",
+      "affiliation": [
+        {"@id": "http://ror.org/00cwqg982"},
+        {"@id": "http://ror.org/000h6jb29"},
+        {"@id": "http://ror.org/03bnmw459"}
+      ]
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-9937-172X",
+      "@type": "Person",
+      "name": "Juliet L. Osborne",
+      "affiliation": [
+        {"@id": "http://ror.org/03yghzc09"},
+        {"@id": "http://ror.org/0347fy350"}
+      ]
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0401-5122",
+      "@type": "Person",
+      "name": "Julian Lopez Gordillo",
+      "email": "julian.lopezgordillo@naturalis.nl",
+      "affiliation": {"@id": "https://ror.org/0566bfb96"}
+    },
+    {
+      "@id": "http://ror.org/00cwqg982",
+      "@type": "Organization",
+      "name": "Biotechnology and Biological Sciences Research Council",
+      "url": "http://www.bbsrc.ac.uk/"
+    },
+    {
+      "@id": "http://ror.org/03yghzc09",
+      "@type": "Organisation",
+      "name": "University of Exeter",
+      "url": "http://www.exeter.ac.uk/"
+    },
+    {
+      "@id": "http://ror.org/0347fy350",
+      "@type": "Organisation",
+      "name": "Rothamsted Research",
+      "url": "http://www.rothamsted.ac.uk/"
+    },
+    {
+      "@id": "http://ror.org/000h6jb29",
+      "@type": "Organisation",
+      "name": "Helmholtz Centre for Environmental Research",
+      "url": "http://www.ufz.de/index.php?de=11385"
+    },
+    {
+      "@id": "http://ror.org/03bnmw459",
+      "@type": "Organisation",
+      "name": "University of Potsdam",
+      "url": "http://www.uni-potsdam.de/en/"
+    },
+    {
+      "@id": "http://ror.org/01jty7g66",
+      "@type": "Organization",
+      "name": "German Centre for Integrative Biodiversity Research",
+      "url": "http://www.idiv.de/en/idiv-global"
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "Naturalis Biodiversity Center",
+      "url": "http://www.naturalis.nl/"
+
+    },
+    {
+      "@id": "http://www.gnu.org/licenses/gpl-3.0-standalone.html",
+      "@type": "CreativeWork",
+      "name": "GNU General Public License v3.0 only",
+      "description": "The GNU General Public License is a free, copyleft license for software and other kinds of works."
+    }
+  ]
+}
