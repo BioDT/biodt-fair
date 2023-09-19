@@ -15,7 +15,7 @@
       "@id": "./",
       "@type": ["Dataset", "SoftwareApplication"],
       "name": "BEEHAVE",
-      "description": "BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes.\n\nThe purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.",
+      "description": "BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different landscapes. The purpose of BEEHAVE is to allow multiple stressors of honeybee colonies within a hive and in the landscape to be represented, either alone or in combination, to understand their potential influence on colony development and survival: e.g. varroa mites transmitting deformed wing virus (DVW) or acute paralysis virus (APV), effects of several beekeeping practices, poor forage availability or even forage gaps in the landscape, and pesticide-induced losses of in-hive bees and foragers, in-hive bees, or brood.",
       "version": "1.0.0",
       "dateCreated": "2014-03-04",
       "datePublished": "2014-03-04",
