@@ -16,7 +16,7 @@
       "@type": ["Dataset", "SoftwareApplication"],
       "name": "",
       "description": "",
-      "version": "",
+      "softwareVersion": "",
       "dateCreated": "",
       "dateModified": "",
       "license": {"@id": ""},
