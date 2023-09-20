@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "http://doi.org/10.5063/schema/codemeta-2.0",
+    "http://w3id.org/ro/crate/1.2-DRAFT/context"
+  ],
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "about": {"@id": "./"},
+      "conformsTo": {"@id": "http://w3id.org/ro/crate/1.2-DRAFT"},
+      "author": {"@id": "http://orcid.org/0000-0003-0401-5122"}
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "SoftwareApplication"],
+      "name": "Cultural Ecosystem Services pDT - Biodiversity Model",
+      "description": "Species distribution models for species that provide cultural ecosystem services.",
+      "softwareVersion": "0.1.0",
+      "dateCreated": "2023-06-29",
+      "dateModified": "2023-09-10",
+      "license": {"@id": "https://spdx.org/licenses/MIT.html"},
+      "author": [
+        {"@id": "https://orcid.org/0000-0001-6755-9456"},
+        {"@id": "http://orcid.org/"},
+        {"@id": "http://orcid.org/"},
+        {"@id": "http://orcid.org/"},
+        {"@id": "http://orcid.org/"}
+      ],
+      "codeRepository": "https://github.com/BioDT/uc-ces/",
+      "contributors": "",
+      "programmingLanguage": "R",
+      "runtimePlatform": "Docker",
+      "operatingSystem": ["Linux", "Windows", "Mac"],
+      "softwareRequirements": ["tidymodels", "terra", "rbif"]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6755-9456",
+      "@type": "Person",
+      "name": "Simon Rolph",
+      "email": "simrol@ceh.ac.uk",
+      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Chris Andrews",
+      "email": "",
+      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Will Bolton",
+      "email": "",
+      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Dylan Carbone",
+      "email": "",
+      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Jan Dick",
+      "email": "",
+      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "UK Centre for Ecology & Hydrology",
+      "url": "https://www.ceh.ac.uk/"
+
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0401-5122",
+      "@type": "Person",
+      "name": "Julian Lopez Gordillo",
+      "email": "julian.lopezgordillo@naturalis.nl",
+      "affiliation": {"@id": "https://ror.org/0566bfb96"}
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "Naturalis Biodiversity Center",
+      "url": "http://www.naturalis.nl/"
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT.html",
+      "@type": "CreativeWork",
+      "name": "MIT License",
+      "description": "The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility."
+    }
+  ]
+}
