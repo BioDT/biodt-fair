@@ -23,6 +23,8 @@
       "author": [
         {"@id": "http://orcid.org/"}
       ],
+      "codeRepository": "",
+      "contributors": "",
       "programmingLanguage": "",
       "runtimePlatform": "",
       "operatingSystem": [""],
