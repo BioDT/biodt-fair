@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "name": "BioDT FDO Model Profile",
+    "description": "Crate-O Editor Profile that uses Schema.org built-in types to describe BioDT models",
+    "version": 0.1
+  },
+  "rootDataset": {
+      "type": ["Dataset", "SoftwareApplication", "SoftwareSourceCode"]
+  },
+  "classes": {
+    "SoftwareApplication": {
+      "hasSubclass": [],
+      "inputs": [
+        {
+          "id": "https://www.w3.org/ns/dx/prof/Profile",
+          "name": "profile",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "URL"
+          ]
+        },
+        {
+          "id": "http://schema.org/license",
+          "name": "license",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "CreativeWork"
+          ]
+        },
+        {
+          "id": "https://schema.org/additionalType",
+          "name": "type",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "Text",
+            "URL"
+          ]
+        },
+        {
+          "id": "http://schema.org/identifier",
+          "name": "identifier",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "Text",
+            "URL"
+          ]
+        },
+        {
+          "id": "http://schema.org/name",
+          "name": "name",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/description",
+          "name": "description",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/datePublished",
+          "name": "datePublished",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "Date"
+          ]
+        },
+        {
+          "id": "http://schema.org/dateModified",
+          "name": "dateModified",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "Date"
+          ]
+        },
+        {
+          "id": "http://schema.org/author",
+          "name": "author",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Person",
+            "Organization"
+          ]
+        },
+        {
+          "id": "http://schema.org/codeRepository",
+          "name": "codeRepository",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/contributor",
+          "name": "contributor",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Person",
+            "Organization"
+          ]
+        },
+        {
+          "id": "http://schema.org/softwareVersion",
+          "name": "softwareVersion",
+          "help": "...",
+          "multiple": false,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/programmingLanguage",
+          "name": "programmingLanguage",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "ComputerLanguage",
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/runtimePlatform",
+          "name": "runtimePlatform",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/operatingSystem",
+          "name": "operatingSystem",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/softwareRequirements",
+          "name": "softwareRequirements",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text",
+            "URL"
+          ]
+        }
+      ]
+    }
+  }
+}
