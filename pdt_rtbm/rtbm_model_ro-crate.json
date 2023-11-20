@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "http://doi.org/10.5063/schema/codemeta-2.0",
+    "http://w3id.org/ro/crate/1.2-DRAFT/context",
+    {
+      "coordinatePrecision": "http://rs.tdwg.org/dwc/terms/coordinatePrecision",
+      "taxonID": "http://rs.tdwg.org/dwc/terms/taxonID",
+      "measurementType": "http://rs.tdwg.org/dwc/terms/measurementType",
+      "measurementUnit": "http://rs.tdwg.org/dwc/terms/measurementUnit"
+    }
+  ],
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "about": {"@id": "./"},
+      "conformsTo": {"@id": "http://w3id.org/ro/crate/1.2-DRAFT"},
+      "author": {"@id": "http://orcid.org/0000-0003-0401-5122"}
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "SoftwareApplication"],
+      "name": "Real-Time Bird Monitoring pDT - Model",
+      "description": "Bird sound recognition model",
+      "dateCreated": "2022-06-22",
+      "dateModified": "2022-12-02",
+      "license": {"@id": "https://creativecommons.org/licenses/by-nc/4.0/"},
+      "author": [
+        {"@id": "https://orcid.org/0000-0001-7204-8255"},
+        {"@id": "https://orcid.org/0000-0001-9750-4421"}
+      ],
+      "citation": {"@id": "https://doi.org/10.1111/2041-210X.14003"},
+      "keywords": [
+        "autonomous recording units",
+        "bioacoustics",
+        "bio-monitoring",
+        "bird sound recognition",
+        "convolutional neural networks",
+        "deep learning",
+        "model fine-tuning"
+      ],
+      "taxonID": "",
+      "contentLocation": {"@id": ""},
+      "temporalCoverage": "2023-11-01T00:00:00Z--2023-11-13T12:10:00Z",
+      "temporalResolution": "",
+      "measurementType": "",
+      "measurementUnit": "",
+      "predictorsType": "",
+      "modelObjective": "",
+      "modelTargetOutput": "",
+      "modelHypotheses": "",
+      "modelAssumptions": "",
+      "modelAlgorithms": "",
+      "modelComplexity": "",
+      "modelAveraging": "",
+      "modelWorkflow": "",
+      "codeRepository": "",
+      "contributors": "",
+      "softwareVersion": "0.1.0",
+      "runtimePlatform": "Android",
+      "programmingLanguage": "Python",
+      "operatingSystem": [""],
+      "softwareRequirements": [
+       "pandas",
+        "tensorflow"
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "Place",
+      "name": "",
+      "description": "",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "",
+        "longitude": "",
+        "box": ["", "", "", ""],
+        "name": "Latitude:  Longitude: ",
+        "coordinatePrecision": ""
+      },
+      "spatialCoverage": ""
+    },
+    {
+      "@id": "https://doi.org/10.1111/2041-210X.14003",
+      "@type": "ScholarlyArticle",
+      "author": [
+        {"@id": "https://orcid.org/0000-0001-7204-8255"},
+        {"@id": "https://orcid.org/0000-0001-9750-4421"},
+        {"@id": ""}
+      ],
+      "identifier": "https://doi.org/10.1111/2041-210X.14003",
+      "name": "Domain-specific neural networks improve automated bird sound recognition already with small amount of local data",
+      "journal": "Methods in Ecology and Evolution",
+      "datePublished": "2022-12-02"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7204-8255",
+      "@type": "Person",
+      "name": "Patrik Lauha",
+      "email": "patrik.lauha@helsinki.fi",
+      "affiliation": {"@id": "https://ror.org/05n3dz165"}
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9750-4421",
+      "@type": "Person",
+      "name": "Otso Ovaskainen",
+      "email": "otso.t.ovaskainen@jyu.fi",
+      "affiliation": {"@id": "https://ror.org/05n3dz165"}
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0401-5122",
+      "@type": "Person",
+      "name": "Julian Lopez Gordillo",
+      "email": "julian.lopezgordillo@naturalis.nl",
+      "affiliation": {"@id": "https://ror.org/0566bfb96"}
+    },
+    {
+      "@id": "https://ror.org/05n3dz165",
+      "@type": "Organization",
+      "name": "University of Jyväskylä",
+      "url": "https://www.jyu.fi/en/"
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "Naturalis Biodiversity Center",
+      "url": "http://www.naturalis.nl/"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution Non Commercial 4.0 International",
+      "description": "You are free to:\nShare — copy and redistribute the material in any medium or format\nAdapt — remix, transform, and build upon the material\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\nAttribution - You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNonCommercial - You may not use the material for commercial purposes .\nNo additional restrictions - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+    }
+  ]
+}
