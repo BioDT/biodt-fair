@@ -1,0 +1,106 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "coordinatePrecision": "http://rs.tdwg.org/dwc/terms/coordinatePrecision"
+        }
+    ],
+    "@graph": [
+      {
+          "@id": "ro-crate-metadata.json",
+          "@type": "CreativeWork",
+          "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+          "about": {"@id": "./"}
+      },
+      {
+          "@id": "./",
+          "@type": "Dataset",
+          "identifier": "https://doi.org/10.1594/PANGAEA.910837",
+          "name": "Land cover classification map of Germany's agricultural area based on Sentinel-2A data from 2016",
+          "description": "In this study we demonstrate that APiC, due to its data-driven nature, is a very flexible compositing and classification approach making efficient use of dense satellite time series in areas with frequent cloud coverage. Hence, regionalisation can be given greater focus in future broad-scale classifications in order to facilitate better integration of small-scale biophysical conditions and achieve even better results in detailed land cover mapping.",
+          "author": [
+              {"@id": "https://orcid.org/0009-0001-3717-9628"},
+              {"@id": "https://orcid.org/0000-0001-9657-8779"},
+              {"@id": "https://orcid.org/0000-0002-4761-3344"}
+          ],
+          "datePublished": "2020",
+          "keywords": ["compositing", "crop mapping", "land cover classification", "phenology", "random forest", "Sentinel-2"],
+          "isPartOf": {"@id": "https://doi.org/10.1016/j.rse.2020.111673"},
+          "hasPart": [
+              {"@id": "preidl-etal-RSE-2020_land-cover-classification-germany-2016.tif"},
+              {"@id": "preidl-etal-RSE-2020_land-cover-classification-germany-2016.tif.aux.xml"},
+              {"@id": "geoanwendungen-des-bundes_nutzungsbedingungen.pdf"},
+          ],
+          "spatialCoverage": "Median Latitude: 50.550000 * Median Longitude: 10.100000 * South-bound Latitude: 47.500000 * West-bound Longitude: 7.200000 * North-bound Latitude: 53.600000 * East-bound Longitude: 13.000000",
+          "coordinatePrecision": "10",
+          "mapProjection": "Lambert Azimuthal Equal Area",
+          "license": {"@id": "https://creativecommons.org/licenses/by-sa/4.0/"},
+          "contentSize": "136.1 MB",
+      },
+      {
+          "@id": "https://doi.org/10.1016/j.rse.2020.111673",
+          "@type": "ScholarlyArticle",
+          "name": "Introducing APiC for regionalised land cover mapping on the national scale using Sentinel-2A imagery",
+          "description": "In this study we demonstrate that APiC, due to its data-driven nature, is a very flexible compositing and classification approach making efficient use of dense satellite time series in areas with frequent cloud coverage. Hence, regionalisation can be given greater focus in future broad-scale classifications in order to facilitate better integration of small-scale biophysical conditions and achieve even better results in detailed land cover mapping.",
+          "author": [
+              {"@id": "https://orcid.org/0009-0001-3717-9628"},
+              {"@id": "https://orcid.org/0000-0001-9657-8779"},
+              {"@id": "https://orcid.org/0000-0002-4761-3344"}
+          ],
+          "datePublished": "2020"
+      },
+      {
+          "@id": "preidl-etal-RSE-2020_land-cover-classification-germany-2016.tif",
+          "@type": ["File", "MediaObject"],
+          "name": "GeoTIFF land cover map with class names and color table",
+          "description": "High resolution and thematically detailed land cover map in six landscape regions of Germany. It was produced using a highly automated pixel-based compositing and classification approach. The agricultural area of Germany was thus classified into a total of 19 land cover classes.",
+          "contentSize": "155.0 MB",
+          "encodingFormat": "image/tiff"
+      },
+      {
+          "@id": "preidl-etal-RSE-2020_land-cover-classification-germany-2016.tif.aux.xml",
+          "@type": "File",
+          "description": "List of the 19 land cover classes used for the land cover map.",
+          "contentSize": "24,6KB",
+          "encodingFormat": "text/xml"
+      },
+      {
+          "@id": "geoanwendungen-des-bundes_nutzungsbedingungen.pdf",
+          "@type": ["File", "CreativeWork"],
+          "name": "Terms of use for the use of federal geospatial applications",
+          "description": "These terms of use apply to the use of geobase data and geodata services from the surveying administrations of the federal states, which are made available to licensees for further use by federal agencies as part of maps or other federal products with a geo-related reference (geographical applications).",
+          "about": {"@id": "preidl-etal-RSE-2020_land-cover-classification-germany-2016.tif"},
+          "contentSize": "155.0 MB",
+          "encodingFormat": "application/pdf"
+      },
+      {
+          "@id": "https://orcid.org/0009-0001-3717-9628",
+          "@type": "Person",
+          "name": "Sebastian Preidl",
+          "affiliation": {"@id": "http://ror.org/000h6jb29"}
+      },
+      {
+          "@id": "https://orcid.org/0000-0001-9657-8779",
+          "@type": "Person",
+          "name": "Maximilian Lange",
+          "affiliation": {"@id": "http://ror.org/000h6jb29"}
+      },
+      {
+          "@id": "https://orcid.org/0000-0002-4761-3344",
+          "@type": "Person",
+          "name": "Daniel Doktor",
+          "affiliation": {"@id": "http://ror.org/000h6jb29"}
+      },
+      {
+          "@id": "http://ror.org/000h6jb29",
+          "@type": "Organisation",
+          "name": "Helmholtz Centre for Environmental Research",
+          "url": "http://www.ufz.de/index.php?de=11385"
+      },
+      {
+          "@id": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "@type": "CreativeWork",
+          "name": "Creative Commons Attribution Share Alike 4.0 International"
+      }
+    ]
+}

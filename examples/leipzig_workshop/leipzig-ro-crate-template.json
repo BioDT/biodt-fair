@@ -1,0 +1,106 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "coordinatePrecision": "http://rs.tdwg.org/dwc/terms/coordinatePrecision"
+        }
+    ],
+    "@graph": [
+      {
+          "@id": "ro-crate-metadata.json",
+          "@type": "CreativeWork",
+          "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+          "about": {"@id": "./"}
+      },
+      {
+          "@id": "./",
+          "@type": "Dataset",
+          "identifier": "",
+          "name": "",
+          "description": "",
+          "author": [
+              {"@id": ""},
+              {"@id": ""},
+              {"@id": ""}
+          ],
+          "datePublished": "",
+          "keywords": ["",],
+          "isPartOf": {"@id": ""},
+          "hasPart": [
+              {"@id": ""},
+              {"@id": ""},
+              {"@id": ""}
+          ],
+          "spatialCoverage": "",
+          "coordinatePrecision": "",
+          "mapProjection": "",
+          "license": {"@id": ""},
+          "contentSize": ""
+      },
+      {
+        "@id": "",
+        "@type": "ScholarlyArticle",
+        "name": "",
+        "description": "",
+        "author": [
+          {"@id": ""},
+          {"@id": ""},
+          {"@id": ""}
+        ],
+        "datePublished": ""
+      },
+      {
+          "@id": "",
+          "@type": ["File", "MediaObject"],
+          "name": "",
+          "description": "",
+          "contentSize": "",
+          "encodingFormat": ""
+      },
+      {
+          "@id": "",
+          "@type": "File",
+          "description": "",
+          "contentSize": "",
+          "encodingFormat": ""
+      },
+      {
+          "@id": "",
+          "@type": ["File", "CreativeWork"],
+          "name": "",
+          "description": "",
+          "about": {"@id": ""},
+          "contentSize": "",
+          "encodingFormat": ""
+      },
+      {
+          "@id": "",
+          "@type": "Person",
+          "name": "",
+          "affiliation": {"@id": ""}
+      },
+      {
+          "@id": "",
+          "@type": "Person",
+          "name": "",
+          "affiliation": {"@id": ""}
+      },
+      {
+          "@id": "",
+          "@type": "Person",
+          "name": "",
+          "affiliation": {"@id": ""}
+      },
+      {
+          "@id": "",
+          "@type": "Organisation",
+          "name": "",
+          "url": ""
+      },
+      {
+          "@id": "",
+          "@type": "CreativeWork",
+          "name": ""
+      }
+    ]
+}
