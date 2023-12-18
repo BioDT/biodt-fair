@@ -40,21 +40,10 @@
         "model fine-tuning"
       ],
       "taxonID": "",
-      "contentLocation": {"@id": ""},
+      "contentLocation": {"@id": "https://sws.geonames.org/660013/"},
       "temporalCoverage": "2023-11-01T00:00:00Z--2023-11-13T12:10:00Z",
       "temporalResolution": "",
-      "measurementType": "",
-      "measurementUnit": "",
-      "predictorsType": "",
-      "modelObjective": "",
-      "modelTargetOutput": "",
-      "modelHypotheses": "",
-      "modelAssumptions": "",
-      "modelAlgorithms": "",
-      "modelComplexity": "",
-      "modelAveraging": "",
-      "modelWorkflow": "",
-      "codeRepository": "",
+      "codeRepository": "https://zenodo.org/doi/10.5281/zenodo.7115877",
       "contributors": "",
       "softwareVersion": "0.1.0",
       "runtimePlatform": "Android",
@@ -62,23 +51,31 @@
       "operatingSystem": [""],
       "softwareRequirements": [
        "pandas",
+        "keras",
         "tensorflow"
-      ]
+      ],
+      "trainingData": [
+        {"@id": "https://doi.org/10.5061/dryad.2bvq83btd"},
+        {"@id": "https://zenodo.org/doi/10.5281/zenodo.7030862"}
+      ],
+      "preprocessing": "",
+      "testingData": {"@id": ""},
+      "testingMetrics": ""
     },
     {
-      "@id": "",
+      "@id": "https://sws.geonames.org/660013/",
       "@type": "Place",
-      "name": "",
+      "name": "Republic of Finland",
       "description": "",
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "",
-        "longitude": "",
+        "latitude": "64",
+        "longitude": "26",
         "box": ["", "", "", ""],
-        "name": "Latitude:  Longitude: ",
+        "name": "Latitude: 64 Longitude: 26",
         "coordinatePrecision": ""
       },
-      "spatialCoverage": ""
+      "spatialCoverage": "political"
     },
     {
       "@id": "https://doi.org/10.1111/2041-210X.14003",
@@ -88,7 +85,6 @@
         {"@id": "https://orcid.org/0000-0001-9750-4421"},
         {"@id": ""}
       ],
-      "identifier": "https://doi.org/10.1111/2041-210X.14003",
       "name": "Domain-specific neural networks improve automated bird sound recognition already with small amount of local data",
       "journal": "Methods in Ecology and Evolution",
       "datePublished": "2022-12-02"
