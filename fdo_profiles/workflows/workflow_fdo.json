@@ -1,0 +1,81 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        { "@id": "https://w3id.org/ro/crate/1.1"},
+        { "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"}
+      ]
+    },
+    {
+      "@id": "ro-crate-preview.html",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Example Workflow",
+      "description": "An example workflow RO-Crate",
+      "license": "Apache-2.0",
+      "mainEntity": {
+        "@id": "example_workflow.cwl"
+      },
+      "hasPart": [
+        {
+          "@id": "example_workflow.cwl"
+        },
+        {
+          "@id": "diagram.svg"
+        },
+        {
+          "@id": "README.md"
+        }
+      ]
+    },
+    {
+      "@id": "example_workflow.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "HowTo"
+      ],
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+      },
+      "name": "Example Workflow",
+      "image": {
+        "@id": "diagram.svg"
+      }
+    },
+    {
+      "@id": "diagram.svg",
+      "name": "Example Workflow Diagram",
+      "@type": [
+        "File",
+        "ImageObject"
+      ]
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "about": "./",
+      "encodingFormat": "text/markdown"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+      "@type": "ComputerLanguage",
+      "name": "Common Workflow Language",
+      "alternateName": "CWL",
+      "identifier": "https://w3id.org/cwl/v1.2/",
+      "url": "https://www.commonwl.org/"
+    }
+  ]
+}
