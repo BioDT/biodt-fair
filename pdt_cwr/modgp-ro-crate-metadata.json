@@ -1,0 +1,57 @@
+{
+  "@context": ["https://w3id.org/ro/crate/1.1/context"],
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "https://github.com/uio-mana/CWR-Hackathon/tree/main/ModGP",
+      "@type": "Dataset",
+      "hasPart": [{ "@id": "ModGP.R" }]
+    },
+    {
+      "@id": "ModGP.R",
+      "@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
+      "description": "BioDT CWR - ModGP",
+      "name": "ModGP.R",
+      "url": "https://github.com/uio-mana/CWR-Hackathon/blob/main/ModGP",
+      "keywords": "SDM, crop wild relatives, genomics",
+      "dateCreated": "2023-01-23",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0002-4984-7646"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8045-6950"
+        }
+      ],
+      "programmingLanguage": { "@id": "#R" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-8045-6950",
+      "name": "Desalegn Chala Gelete"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4984-7646",
+      "@type": "Person",
+      "name": "Erik Kusch"
+    },
+    {
+      "@id": "#R",
+      "@type": "ProgrammingLanguage",
+      "name": "R"
+    }
+  ]
+}
