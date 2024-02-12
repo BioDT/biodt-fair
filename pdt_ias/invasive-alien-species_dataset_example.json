@@ -1,0 +1,129 @@
+{ "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+      "about": {"@id": "./"}
+    },
+    {
+      "@id": "./",
+      "identifier": "https://doi.org/10.4225/59/59672c09f4a4b",
+      "@type": "Dataset",
+      "author": {"@id": "https://orcid.org/0000-0002-9951-6765"},
+      "datePublished": "2017",
+      "name": "EU Ecosystem Assessment - Invasive Alien Species",
+      "description": "A spatially explicit cross-cutting indicator that quantifies the cumulative and relative pressure by IAS on terrestrial and freshwater ecosystems, by means of a unitless figure related to the relative extent of each ecosystem type negatively affected, over a reference grid of 10 km spatial resolution.",
+      "license": {"@id": "http://creativecommons.org/licenses/by/4.0/"},
+      "hasPart": [
+        {"@id": "readme.txt"},
+        {"@id": "IASpressure_LAND_20200502.csv"},
+        {"@id": "IASpressure_LAND_20200502.xlsx"},
+        {"@id": "IASpressure_WATER_20200502.csv"},
+        {"@id": "IASpressure_WATER_20200502.xlsx"},
+        {"@id": "cropland/"},
+        {"@id": "forest/"},
+        {"@id": "freshwater/"},
+        {"@id": "grassland/"},
+        {"@id": "heathland/"},
+        {"@id": "sparse/"},
+        {"@id": "terrestrial/"},
+        {"@id": "urban/"}
+      ]
+    },
+    {
+      "@id": "readme.txt",
+      "@type": "File",
+      "name": "README file",
+      "description": "Plain text file with information about the dataset files, their extent, resolution, units, and format. It also includes a link to a related publication.",
+      "contentSize": 1355,
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "IASpressure_LAND_20200502.csv",
+      "@type": "File",
+      "description": "CSV file containing the following fields: GRID_ID,IAS_Pres,pcExt_inv_01,pcExt_inv_02,pcExt_inv_03,pcExt_inv_04,pcExt_inv_05,pcExt_inv_06,TotPC_inv,Cum_Urb,Cum_Crop,Cum_Grass,Cum_Wood,Cum_Heath,Cum_Sparse,Cum_Press_Cell,Rel_Urb,Rel_Crop,Rel_Grass,Rel_Wood,Rel_Heath,Rel_Sparse",
+      "crs": "EPSG:3035 - ETRS89 / LAEA Europe - Projected",
+      "spatialCoverage": "0.0000000000000000,700000.0000000000000000 : 8400000.0000000000000000,7500000.0000000000000000",
+      "resolution": 100,
+      "contentSize": 2535314,
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@id": "IASpressure_LAND_20200502.xlsx",
+      "@type": "File"
+    },
+    {
+      "@id": "IASpressure_WATER_20200502.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "IASpressure_WATER_20200502.xlsx",
+      "@type": "File"
+    },
+    {
+      "@id": "cropland/",
+      "@type": "Dataset",
+      "description": "Directory containing GeoPackage files relevant for the croplands spatial extent of the dataset.",
+      "hasPart": [
+        {"@id": "cropland/IASpressure_LAND_CROP.gpkg"},
+        {"@id": "cropland/IASpressure_LAND_CROP.gpkg-shm"},
+        {"@id": "cropland/IASpressure_LAND_CROP.gpkg-wal"}
+      ]
+    },
+    {
+      "@id": "cropland/IASpressure_LAND_CROP.gpkg",
+      "@type": "File"
+    },
+    {
+      "@id": "cropland/IASpressure_LAND_CROP.gpkg-shm",
+      "@type": "File"
+    },
+    {
+      "@id": "cropland/IASpressure_LAND_CROP.gpkg-wal",
+      "@type": "File"
+    },
+    {
+      "@id": "forest/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "freshwater/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "grassland/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "heathland/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "sparse/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "terrestrial/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "urban/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9951-6765",
+      "@type": "Person",
+      "affiliation": "European Commission Joint Research Centre Ispra: Ispra, Lombardia, IT",
+      "name": "Grazia Zulian"
+    },
+    {
+      "@id": "http://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "description": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.",
+      "identifier": "http://creativecommons.org/licenses/by/4.0/",
+      "name": "Attribution 4.0 International (CC BY 4.0)"
+    }
+  ]
+}

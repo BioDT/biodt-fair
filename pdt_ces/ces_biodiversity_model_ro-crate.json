@@ -1,12 +1,18 @@
 {
   "@context": [
     "http://doi.org/10.5063/schema/codemeta-2.0",
-    "http://w3id.org/ro/crate/1.2-DRAFT/context"
+    "http://w3id.org/ro/crate/1.2-DRAFT/context",
+    {
+      "coordinatePrecision": "http://rs.tdwg.org/dwc/terms/coordinatePrecision",
+      "taxonID": "http://rs.tdwg.org/dwc/terms/taxonID",
+      "measurementType": "http://rs.tdwg.org/dwc/terms/measurementType",
+      "measurementUnit": "http://rs.tdwg.org/dwc/terms/measurementUnit"
+    }
   ],
   "@graph": [
     {
-      "@type": "CreativeWork",
       "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
       "about": {"@id": "./"},
       "conformsTo": {"@id": "http://w3id.org/ro/crate/1.2-DRAFT"},
       "author": {"@id": "http://orcid.org/0000-0003-0401-5122"}
@@ -14,63 +20,97 @@
     {
       "@id": "./",
       "@type": ["Dataset", "SoftwareApplication"],
+      "identifier": "",
       "name": "Cultural Ecosystem Services pDT - Biodiversity Model",
       "description": "Species distribution models for species that provide cultural ecosystem services.",
-      "softwareVersion": "0.1.0",
       "dateCreated": "2023-06-29",
       "dateModified": "2023-09-10",
       "license": {"@id": "https://spdx.org/licenses/MIT.html"},
       "author": [
         {"@id": "https://orcid.org/0000-0001-6755-9456"},
-        {"@id": "http://orcid.org/"},
-        {"@id": "http://orcid.org/"},
-        {"@id": "http://orcid.org/"},
-        {"@id": "http://orcid.org/"}
+        {"@id": "https://orcid.org/0000-0003-2428-272X"},
+        {"@id": "https://orcid.org/TODO-XXXX-XXXX-XXX1"},
+        {"@id": "https://orcid.org/0009-0003-5290-786X"},
+        {"@id": "https://orcid.org/0000-0002-4180-9338"},
+        {"@id": "https://orcid.org/0000-0003-0401-5122"}
       ],
-      "codeRepository": "https://github.com/BioDT/uc-ces/",
+      "citation": {"@id": ""},
+      "taxonID": "",
+      "contentLocation": {"@id": "https://sws.geonames.org/10104113/"},
+      "temporalCoverage": "2023-11-01T00:00:00Z--2023-11-13T12:10:00Z",
+      "temporalResolution": "",
+      "measurementType": "citizen science; field survey",
+      "measurementUnit": "point occurrence",
+      "predictorsType": "climatic; habitat; topographic",
+      "modelObjective": "Mapping and interpolation",
+      "modelTargetOutput": "Maps of potential species presence",
+      "modelHypotheses": "NA",
+      "modelAssumptions": "We assume that there is no temporal changes in environmental variables, that the abiotic variables is the sole predictor of species distributions other than biotic variables.",
+      "modelAlgorithms": "glm; svm; gaussian process model",
+      "modelComplexity": "A variety of models were used without making run time too extensive.",
+      "modelAveraging": "We calculated a mean weighted average based on model performance",
+      "modelWorkflow": "Pulled data from GBIF, conducts data thinning, fits model, and builds ensemble from models and predicts in space.",
+      "codeRepository": "https://github.com/BioDT/uc-ces/tree/main/biodiversity_model",
       "contributors": "",
-      "programmingLanguage": "R",
+      "softwareVersion": "0.1.0",
       "runtimePlatform": "Docker",
+      "programmingLanguage": "R",
       "operatingSystem": ["Linux", "Windows", "Mac"],
-      "softwareRequirements": ["tidymodels", "terra", "rbif"]
+      "softwareRequirements": ["tidymodels", "terra", "rbif"],
+      "supportingData": ""
+    },
+    {
+      "@id": "https://sws.geonames.org/10104113/",
+      "@type": "Place",
+      "name": "Cairngorms National Park",
+      "description": "The Cairngorms is part of an international family of National Parks and is the largest in the UK, at 4,528 sq km (1,748 sq miles). It is located in the Scottish Highlands, 127 miles north of Edinburgh and 140 miles north of Glasgow. The Park covers parts of Aberdeenshire, Moray, Highland, Angus and Perth and Kinross. Nearly half of the land in the National Park is considered ‘wild land’. 49 per cent of the park has been recognised as being of international importance for nature, and is protected by European Law. There are 19 Areas of Conservation, 12 Special Protection Areas and 46 Sites of Special Scientific Interest within the Park.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "57.04395",
+        "longitude": "-3.60334",
+        "box": ["", "", "", ""],
+        "name": "Latitude: 57.04395 Longitude: -3.60334",
+        "coordinatePrecision": "0.1"
+      },
+      "spatialCoverage": "political"
     },
     {
       "@id": "https://orcid.org/0000-0001-6755-9456",
       "@type": "Person",
       "name": "Simon Rolph",
       "email": "simrol@ceh.ac.uk",
-      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+      "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
-      "@id": "http://orcid.org/",
+      "@id": "https://orcid.org/0000-0003-2428-272X",
       "@type": "Person",
       "name": "Chris Andrews",
       "email": "",
-      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+      "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
-      "@id": "http://orcid.org/",
+      "@id": "https://orcid.org/TODO-XXXX-XXXX-XXX1",
       "@type": "Person",
       "name": "Will Bolton",
       "email": "",
-      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+      "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
-      "@id": "http://orcid.org/",
+      "@id": "https://orcid.org/0009-0003-5290-786X",
       "@type": "Person",
       "name": "Dylan Carbone",
-      "email": "",
-      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+      "email": "dylcar@ceh.ac.uk",
+      "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
-      "@id": "http://orcid.org/",
+      "@id": "https://orcid.org/0000-0002-4180-9338",
       "@type": "Person",
       "name": "Jan Dick",
       "email": "",
-      "affiliation": {"@id": " https://ror.org/00pggkr55"}
+      "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
-      "@id": "https://ror.org/0566bfb96",
+      "@id": "https://ror.org/00pggkr55",
       "@type": "Organization",
       "name": "UK Centre for Ecology & Hydrology",
       "url": "https://www.ceh.ac.uk/"
@@ -88,6 +128,19 @@
       "@type": "Organization",
       "name": "Naturalis Biodiversity Center",
       "url": "http://www.naturalis.nl/"
+    },
+     {
+      "@id": "http://orcid.org/0000-0002-0655-3699",
+      "@type": "Person",
+      "name": "Christoph Wohner",
+      "email": "",
+      "affiliation": {"@id": "https://ror.org/013vyke20"}
+    },
+    {
+      "@id": "https://ror.org/013vyke20",
+      "@type": "Organization",
+      "name": "Environment Agency Austria",
+      "url": ""
     },
     {
       "@id": "https://spdx.org/licenses/MIT.html",
