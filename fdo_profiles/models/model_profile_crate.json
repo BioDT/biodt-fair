@@ -1,0 +1,124 @@
+{
+  "@context": [
+    "http://doi.org/10.5063/schema/codemeta-2.0",
+    "http://w3id.org/ro/crate/1.2-DRAFT/context"
+  ],
+  "@graph": [
+    {
+      "@id": "#Github link",
+      "@type": [
+        "Dataset",
+        "Profile"
+      ],
+      "name": "FDO Model Profile Crate",
+      "version": "0.1.0",
+      "hasPart": [],
+      "hasResource": [
+        {
+          "@id": "#hasGuidance"
+        },
+        {
+          "@id": "#hasExample"
+        }
+      ]
+    },
+    {
+      "@id": "#hasGuidance",
+      "@type": "ResourceDescriptor",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
+      },
+      "hasArtifact": {
+        "@id": "https://github.com/BioDT/biodt-fair/discussions/4"
+      }
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/discussions/4",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/html",
+      "about": "./"
+    },
+    {
+      "@id": "#hasExample",
+      "@type": "ResourceDescriptor",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/example"
+      },
+      "hasArtifact": {
+        "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_beehave/beehave_ro-crate.json"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/constraints",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Constraints",
+      "description": "Descriptions of obligations, limitations or extensions that the profile defines"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/example",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Example",
+      "description": "Sample instance data conforming to the profile"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/guidance",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Guidance",
+      "description": "Documents, in human-readable form, how to use the profile"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/mapping",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Mapping",
+      "description": "Describes conversions between two specifications"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/schema",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Schema",
+      "description": "Machine-readable structural descriptions of data defined by the profile"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/specification",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Specification",
+      "description": "Defining the profile in human-readable form"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/validation",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Validation",
+      "description": "Supplies instructions about how to verify conformance of data to the profile"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary",
+      "@type": [
+        "DefinedTerm",
+        "ResourceRole"
+      ],
+      "name": "Vocabulary",
+      "description": "Defines terms used in the profile specification"
+    }
+  ]
+}
