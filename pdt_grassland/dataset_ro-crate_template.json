@@ -1,0 +1,101 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context"
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "identifier": "",
+      "name": "",
+      "description": "",
+      "profile": "",
+      "license": {
+        "@id": ""
+      },
+      "dateCreated": "",
+      "author": {
+        "@id": ""
+      },
+      "keywords": [
+        ""
+      ],
+      "url": "",
+      "variableMeasured": "",
+      "measurementTechnique": {
+        "@id": ""
+      },
+      "spatialCoverage": {
+        "@id": ""
+      },
+      "temporalCoverage": "",
+      "contentSize": "",
+      "version": "",
+      "publisher": {
+        "@id": ""
+      },
+      "hasPart": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "Place",
+      "name": "",
+      "description": "",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "",
+        "longitude": "",
+        "polygon": "",
+        "name": ""
+      }
+    },
+    {
+      "@id": "",
+      "@type": "File",
+      "name": "",
+      "description": "",
+      "contentSize": "",
+      "encodingFormat": ""
+    },
+    {
+      "@id": "",
+      "@type": "Person",
+      "name": "",
+      "affiliation": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "Organisation",
+      "name": "",
+      "url": ""
+    },
+    {
+      "@id": "",
+      "@type": [
+        "File",
+        "CreativeWork"
+      ],
+      "name": "",
+      "contentSize": "",
+      "encodingFormat": ""
+    }
+  ]
+}
