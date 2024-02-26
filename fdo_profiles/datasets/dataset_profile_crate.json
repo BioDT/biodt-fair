@@ -10,7 +10,7 @@
         "Dataset",
         "Profile"
       ],
-      "name": "FDO Workflow Profile Crate",
+      "name": "FDO Dataset Profile Crate",
       "version": "0.1.0",
       "hasPart": [],
       "hasResource": [
@@ -29,11 +29,11 @@
         "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
       },
       "hasArtifact": {
-        "@id": "https://github.com/BioDT/biodt-fair/discussions/7"
+        "@id": "https://github.com/BioDT/biodt-fair/discussions/8"
       }
     },
     {
-      "@id": "https://github.com/BioDT/biodt-fair/discussions/7",
+      "@id": "https://github.com/BioDT/biodt-fair/discussions/8",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"
@@ -45,7 +45,7 @@
         "@id": "http://www.w3.org/ns/dx/prof/role/example"
       },
       "hasArtifact": {
-        "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_cwr/modgp-ro-crate-metadata.json"
+        "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_grassland/grassland_example_ro-crate.json"
       }
     },
     {
