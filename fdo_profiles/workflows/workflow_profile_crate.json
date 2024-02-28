@@ -28,12 +28,23 @@
       "hasRole": {
         "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
       },
-      "hasArtifact": {
-        "@id": "https://github.com/BioDT/biodt-fair/discussions/7"
-      }
+      "hasArtifact": [
+        {
+          "@id": "https://github.com/BioDT/biodt-fair/discussions/7"
+        },
+        {
+          "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/workflows/workflow_rocrate_example.json"
+        }
+      ]
     },
     {
       "@id": "https://github.com/BioDT/biodt-fair/discussions/7",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/html",
+      "about": "./"
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/workflows/workflow_rocrate_example.json",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"
@@ -47,6 +58,12 @@
       "hasArtifact": {
         "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_cwr/modgp-ro-crate-metadata.json"
       }
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_cwr/modgp-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/html",
+      "about": "./"
     },
     {
       "@id": "http://www.w3.org/ns/dx/prof/role/constraints",

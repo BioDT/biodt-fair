@@ -10,7 +10,7 @@
         "Dataset",
         "Profile"
       ],
-      "name": "FDO Model Profile Crate",
+      "name": "FDO Mapping Set Profile Crate",
       "version": "0.1.0",
       "hasPart": [],
       "hasResource": [
@@ -30,21 +30,21 @@
       },
       "hasArtifact": [
         {
-          "@id": "https://github.com/BioDT/biodt-fair/discussions/4"
+          "@id": "https://github.com/BioDT/biodt-fair/discussions/9"
         },
         {
-          "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/models/ro-crate_model_template.json"
+          "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/mappings/mapping_ro-crate_template.json"
         }
       ]
     },
     {
-      "@id": "https://github.com/BioDT/biodt-fair/discussions/4",
+      "@id": "https://github.com/BioDT/biodt-fair/discussions/9",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"
     },
     {
-      "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/models/ro-crate_model_template.json",
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/mappings/mapping_ro-crate_template.json",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"
@@ -56,11 +56,11 @@
         "@id": "http://www.w3.org/ns/dx/prof/role/example"
       },
       "hasArtifact": {
-        "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_beehave/beehave_ro-crate.json"
+        "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/mappings/mapping_ro-crate_example.json"
       }
     },
     {
-      "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_beehave/beehave_ro-crate.json",
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/mappings/mapping_ro-crate_example.json",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"

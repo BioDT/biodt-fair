@@ -28,12 +28,23 @@
       "hasRole": {
         "@id": "http://www.w3.org/ns/dx/prof/role/guidance"
       },
-      "hasArtifact": {
-        "@id": "https://github.com/BioDT/biodt-fair/discussions/8"
-      }
+      "hasArtifact": [
+        {
+          "@id": "https://github.com/BioDT/biodt-fair/discussions/8"
+        },
+        {
+          "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_grassland/dataset_ro-crate_template.json"
+        }
+      ]
     },
     {
       "@id": "https://github.com/BioDT/biodt-fair/discussions/8",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/html",
+      "about": "./"
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_grassland/dataset_ro-crate_template.json",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
       "about": "./"
@@ -47,6 +58,12 @@
       "hasArtifact": {
         "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_grassland/grassland_example_ro-crate.json"
       }
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_grassland/grassland_example_ro-crate.json",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/html",
+      "about": "./"
     },
     {
       "@id": "http://www.w3.org/ns/dx/prof/role/constraints",
