@@ -1,0 +1,80 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    "https://raw.githubusercontent.com/mapping-commons/sssom/0.15.0/src/sssom_schema/context/sssom_schema.context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "MappingSet"],
+      "identifier": "https://mapping.bio/api/objects/20.500.14269/aa2d56014fa6",
+      "name": "Example mapping set from mapping.bio",
+      "description": "This is an example file for the SSSOM for illustration only. Its contents are entirely fabricated for development purposes in the BioDT project.",
+      "profile": "https://mapping.bio/api/schemas/MappingSet",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "dateCreated": "2024-02-29",
+      "author": {
+        "@id": "https://orcid.org/0000-0002-7356-1779"
+      },
+      "keywords": [
+        "mapping",
+        "SSSOM",
+        "BioDT"
+      ],
+      "mapping_set_id": "https://mapping.bio/api/objects/20.500.14269/aa2d56014fa6",
+      "mappings": [
+        {
+          "subject_id": "http://purl.obolibrary.org/obo/HP_0009124",
+          "predicate_id": "skos:exactMatch",
+          "object_id": "http://purl.obolibrary.org/obo/MP_0000003",
+          "mapping_justification": "semapv:ManualMappingCuration",
+          "curation_rule": "https://w3id.org/sssom/commons/disease/curation-rules/MPR2"
+        }
+      ],
+      "mapping_set_version": "0.1.0",
+      "mapping_provider": {
+        "@id": "https://doi.org/10.3030/101057437"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7356-1779",
+      "@type": "Person",
+      "name": "Nicolas Matentzoglu",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02catss52"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02catss52",
+      "@type": "Organisation",
+      "name": "European Bioinformatics Institute",
+      "url": "http://www.ebi.ac.uk/"
+    },
+    {
+      "@id": "https://doi.org/10.3030/101057437",
+      "@type": "Project",
+      "name": "Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities",
+      "description": "The EU-funded BioDT project will bring together a team of experts in biodiversity, high-performance computing and artificial intelligence to investigate how species interact with their environment and with each other. It will also accurately model interaction between species and their environment. The findings will be used by scientists at research infrastructures to observe changes in biodiversity and relate these changes to possible causes.",
+      "url": "https://biodt.eu/"
+    },
+    {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "@type": "CreativeWork",
+      "name": "CC0 1.0 Universal"
+    }
+  ]
+}

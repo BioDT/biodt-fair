@@ -1,0 +1,71 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    "https://raw.githubusercontent.com/mapping-commons/sssom/0.15.0/src/sssom_schema/context/sssom_schema.context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": ["Dataset", "MappingSet"],
+      "identifier": "",
+      "name": "",
+      "description": "",
+      "profile": "",
+      "license": {
+        "@id": ""
+      },
+      "dateCreated": "",
+      "author": {
+        "@id": ""
+      },
+      "keywords": [
+        ""
+      ],
+      "mapping_set_id": "",
+      "mappings": [
+        {
+          "subject_id": "",
+          "predicate_id": "",
+          "object_id": "",
+          "mapping_justification": "",
+          "curation_rule": ""
+        }
+      ],
+      "mapping_set_version": "",
+      "mapping_provider": {
+        "@id": ""
+      }
+    },
+    {
+      "@id": "",
+      "@type": "Person",
+      "name": "",
+      "affiliation": [
+        {
+          "@id": ""
+        }
+      ]
+    },
+    {
+      "@id": "",
+      "@type": "Organisation",
+      "name": "",
+      "url": ""
+    },
+    {
+      "@id": "#License",
+      "@type": "CreativeWork",
+      "name": ""
+    }
+  ]
+}
