@@ -1,0 +1,81 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    "https://schema.org/"
+  ],
+  "@graph": [
+    {
+      "@id": "assessment.jsonld",
+      "@type": "DataQualityAssessment",
+      "description": "Assessment of data quality for the Invasive Alien Species Prototype Digital Twin project.",
+      "hasPart": [
+        { "@id": "#data_standards" },
+        { "@id": "#quality_standards" },
+        { "@id": "#workflow_standards" },
+        { "@id": "#domain_specific_criteria" }
+      ]
+    },
+    {
+      "@id": "#data_standards",
+      "@type": "DataStandardAssessment",
+      "title": "Assessment of Semantic Standards for Data",
+      "description": "This document evaluates the use of semantic standards in the project's data.",
+      "standard": [
+        {
+          "@type": "DataStandard",
+          "name": "Ecological Metadata Language (EML)",
+          "url": "https://eml.ecoinformatics.org/",  
+          "compliance": "partial"
+        }
+      ]
+    },
+    {
+      "@id": "#quality_standards",
+      "@type": "DataQualityStandardAssessment",
+      "title": "Assessment of Semantic Standards for Data Quality",
+      "description": "This document evaluates the use of semantic standards for describing data quality in the project.",
+      "standard": [
+        {
+          "@type": "DataStandard",
+          "name": "GBIF data quality",
+          "url": "https://www.gbif.org/data-quality-requirements",
+          "compliance": "partial"
+        }
+      ]
+    },
+    {
+      "@id": "#workflow_standards",
+      "@type": "WorkflowStandardAssessment",
+      "title": "Assessment of Semantic Standards for Workflows",
+      "description": "This document evaluates the use of semantic standards to describe the data processing workflows.",
+      "standard": [
+        {
+          "@type": "DataStandard",
+          "name": "Workflow Scripts",
+          "url": "https://workflowhub.eu/projects/134",
+          "compliance": "not_applicable"
+        }
+      ]
+    },
+    {
+      "@id": "#domain_specific_criteria",
+      "@type": "DomainSpecificAssessment",
+      "title": "Assessment of Domain-Specific Quality Criteria",
+      "description": "This document evaluates the data quality based on ecological modelling requirements (spatial and temporal resolution).",
+      "criterion": [
+        {
+          "@type": "DataQualityCriterion",
+          "name": "Spatial Resolution",
+          "description": "Assessment of the data's spatial resolution for suitability in ecological modelling.",
+          "evaluation": "The data has a spatial resolution of 100 meters, which is appropriate for most ecological modelling applications."
+        },
+        {
+          "@type": "DataQualityCriterion",
+          "name": "Temporal Resolution",
+          "description": "Assessment of the data's temporal resolution for suitability in ecological modelling.",
+          "evaluation": "The data has varying temporal resolution depending on the source. Climatology data is monthly, while occurrence data is based on observation dates. This may require specific considerations during model development."
+        }
+      ]
+    }
+  ]
+}
