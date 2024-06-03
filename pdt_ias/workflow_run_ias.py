@@ -121,4 +121,4 @@ crate.root_dataset.append_to("mainEntity", workflow)
 crate.root_dataset.append_to("mentions", action)
 
 # This can be written as a json file
-crate.write("./workflow_run_rocrate_IAS.json")
+crate.write("./workflow_run_rocrate_IAS")

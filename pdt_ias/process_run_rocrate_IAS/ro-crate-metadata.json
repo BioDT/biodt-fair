@@ -9,7 +9,7 @@
                     "@id": "https://w3id.org/ro/wfrun/process/0.4"
                 }
             ],
-            "datePublished": "2024-06-03T14:22:06+00:00",
+            "datePublished": "2024-06-03T14:35:26+00:00",
             "hasPart": [
                 {
                     "@id": "#create_IAS_grid"
@@ -57,7 +57,7 @@
             ],
             "description": "singularity run --bind \"$PWD\" iasdt-modelling-containers_0.0.1.sif",
             "endTime": [
-                "2024-06-03 16:22:06.506895"
+                "2024-06-03 16:35:26.733845"
             ],
             "environment": [
                 {

@@ -13,9 +13,12 @@
                 },
                 {
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
             ],
-            "datePublished": "2024-05-30T12:03:59+00:00",
+            "datePublished": "2024-06-03T14:35:08+00:00",
             "hasPart": [
                 {
                     "@id": "Corine_feedbackloop_workflow.py"
@@ -128,14 +131,14 @@
             "@id": "#workflowrun-5a5970ab...",
             "@type": "CreateAction",
             "endTime": [
-                "2024-05-30 14:03:59.308186"
+                "2024-06-03 16:35:08.329719"
             ],
             "instrument": [
                 {
                     "@id": "Corine_feedbackloop_workflow.py"
                 }
             ],
-            "name": "Corine feedback loop workflow run 5a5970ab...",
+            "name": "Corina feedback loop workflow run 5a5970ab...",
             "object": [
                 {
                     "@id": "/logs/feedback/corine"
@@ -151,7 +154,12 @@
             "@id": "/logs/feedback/corine",
             "@type": "File",
             "description": "Latest metadata file from the logs folder about the Corine land cover dataset",
-            "encodingFormat": "application/json"
+            "encodingFormat": "application/json",
+            "exampleOfWork": [
+                {
+                    "@id": "#Corine_land_cover_metadata"
+                }
+            ]
         },
         {
             "@id": "#Link-to-data-storage",

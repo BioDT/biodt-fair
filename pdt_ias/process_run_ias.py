@@ -94,4 +94,4 @@ crate.root_dataset.append_to("mentions", workflow)
 crate.root_dataset.append_to("conformsTo", profile)
 
 # This can be written to disk as a json file
-crate.write("./process_run_rocrate_IAS.json")
+crate.write("./process_run_rocrate_IAS")
