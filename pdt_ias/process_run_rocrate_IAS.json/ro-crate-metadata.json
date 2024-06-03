@@ -1,0 +1,138 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/wfrun/process/0.4"
+                }
+            ],
+            "datePublished": "2024-06-03T14:22:06+00:00",
+            "hasPart": [
+                {
+                    "@id": "#create_IAS_grid"
+                },
+                {
+                    "@id": "#IAS-pDT-Model"
+                },
+                {
+                    "@id": "#Species_observations"
+                },
+                {
+                    "@id": "#Corine_land_cover"
+                },
+                {
+                    "@id": "#Railway_intensity"
+                },
+                {
+                    "@id": "#IAS_Grid_map"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#create_IAS_grid"
+                }
+            ],
+            "name": "IAS pDT model/dashboard execution #?"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#create_IAS_grid",
+            "@type": "CreateAction",
+            "agent": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7833-5474"
+                }
+            ],
+            "description": "singularity run --bind \"$PWD\" iasdt-modelling-containers_0.0.1.sif",
+            "endTime": [
+                "2024-06-03 16:22:06.506895"
+            ],
+            "environment": [
+                {
+                    "@id": "#grid_size_param"
+                }
+            ],
+            "instrument": [
+                {
+                    "@id": "#IAS-pDT-Model"
+                }
+            ],
+            "name": "Produce grid map of predicted IAS",
+            "object": [
+                {
+                    "@id": "#Species_observations"
+                },
+                {
+                    "@id": "#Corine_land_cover"
+                },
+                {
+                    "@id": "#Railway_intensity"
+                }
+            ],
+            "result": [
+                {
+                    "@id": "#IAS_Grid_map"
+                }
+            ]
+        },
+        {
+            "@id": "#IAS-pDT-Model",
+            "@type": "SoftwareApplication",
+            "name": "Invasive Alien Species Prototype Digital Twin",
+            "softwareVersion": "0.1.0",
+            "url": "https://git.ufz.de/biodt/IASDT.R"
+        },
+        {
+            "@id": "#Species_observations",
+            "@type": "Dataset",
+            "description": "EASIN provides spatial data on 14,000 alien species...",
+            "name": "European Alien Species Information Network (EASIN)"
+        },
+        {
+            "@id": "#Corine_land_cover",
+            "@type": "Dataset",
+            "name": "..."
+        },
+        {
+            "@id": "#Railway_intensity",
+            "@type": "Dataset",
+            "name": "..."
+        },
+        {
+            "@id": "#grid_size_param",
+            "@type": "PropertyValue",
+            "name": "DP_R_CHELSA_Gridsize",
+            "value": "10"
+        },
+        {
+            "@id": "#IAS_Grid_map",
+            "@type": "File",
+            "description": "NetCDF file with the number of invasive alien species per habitat type, shown in a grid according to the reference...",
+            "encodingFormat": "application/netcdf",
+            "name": "Gridded IAS number per habitat type"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7833-5474",
+            "@type": "Person",
+            "name": "Taimur Khan"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/process/0.4",
+            "@type": "CreativeWork",
+            "name": "Process Run Crate",
+            "version": "0.4"
+        }
+    ]
+}

@@ -1,0 +1,186 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/wfrun/process/0.4"
+                },
+                {
+                    "@id": "https://w3id.org/ro/wfrun/workflow/0.4"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ],
+            "datePublished": "2024-05-30T12:03:59+00:00",
+            "hasPart": [
+                {
+                    "@id": "Corine_feedbackloop_workflow.py"
+                },
+                {
+                    "@id": "#workflowrun-5a5970ab..."
+                },
+                {
+                    "@id": "/logs/feedback/corine"
+                },
+                {
+                    "@id": "#Link-to-data-storage"
+                }
+            ],
+            "mainEntity": [
+                {
+                    "@id": "Corine_feedbackloop_workflow.py"
+                }
+            ],
+            "mentions": [
+                {
+                    "@id": "#workflowrun-5a5970ab..."
+                }
+            ],
+            "name": "Feedback Loop for Corine data source"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/crate/1.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ]
+        },
+        {
+            "@id": "Corine_feedbackloop_workflow.py",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "creator": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7833-5474"
+                }
+            ],
+            "input": [
+                {
+                    "@id": "#Corine_land_cover_metadata"
+                }
+            ],
+            "name": "Pydoit actions about feedback loops for corine data source",
+            "output": [
+                {
+                    "@id": "#Corine_land_cover_dataset"
+                }
+            ],
+            "programmingLanguage": [
+                {
+                    "@id": "https://www.python.org/downloads/release/python-3123/"
+                }
+            ]
+        },
+        {
+            "@id": "#Corine_land_cover_metadata",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "description": "Corine dataset metadata from the logs folder, needed to be compared against the latest one from the CLMS API for recency",
+            "encodingFormat": "application/json",
+            "name": "Corine dataset metadata",
+            "valueRequired": "False",
+            "workExample": [
+                {
+                    "@id": "/logs/feedback/corine"
+                }
+            ]
+        },
+        {
+            "@id": "#Corine_land_cover_dataset",
+            "@type": "FormalParameter",
+            "additionalType": "Dataset",
+            "description": "Provides pan-European CORINE Land Cover inventory for 44 thematic classes for...",
+            "name": "CORINE Land Cover 2018 (vector/raster 100 m), Europe, 6-yearly",
+            "workExample": [
+                {
+                    "@id": "#Link-to-data-storage"
+                }
+            ]
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7833-5474",
+            "@type": "Person",
+            "name": "Taimur Khan"
+        },
+        {
+            "@id": "https://www.python.org/downloads/release/python-3123/",
+            "@type": "ComputerLanguage",
+            "name": "Python 3.12.3",
+            "url": "https://www.python.org/",
+            "version": "3.12.3"
+        },
+        {
+            "@id": "#workflowrun-5a5970ab...",
+            "@type": "CreateAction",
+            "endTime": [
+                "2024-05-30 14:03:59.308186"
+            ],
+            "instrument": [
+                {
+                    "@id": "Corine_feedbackloop_workflow.py"
+                }
+            ],
+            "name": "Corine feedback loop workflow run 5a5970ab...",
+            "object": [
+                {
+                    "@id": "/logs/feedback/corine"
+                }
+            ],
+            "result": [
+                {
+                    "@id": "#Link-to-data-storage"
+                }
+            ]
+        },
+        {
+            "@id": "/logs/feedback/corine",
+            "@type": "File",
+            "description": "Latest metadata file from the logs folder about the Corine land cover dataset",
+            "encodingFormat": "application/json"
+        },
+        {
+            "@id": "#Link-to-data-storage",
+            "@type": "Dataset",
+            "description": "Latest/updated data from the Corine land cover dataset",
+            "encodingFormat": "image/tiff",
+            "exampleOfWork": [
+                {
+                    "@id": "#Corine_land_cover_dataset"
+                }
+            ]
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/process/0.4",
+            "@type": "CreativeWork",
+            "name": "Process Run Crate",
+            "version": "0.4"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/workflow/0.4",
+            "@type": "CreativeWork",
+            "name": "Workflow Run Crate",
+            "version": "0.4"
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+            "@type": "CreativeWork",
+            "name": "Workflow RO-Crate",
+            "version": "1.0"
+        }
+    ]
+}
