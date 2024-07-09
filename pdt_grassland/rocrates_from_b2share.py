@@ -6,11 +6,16 @@
 !pip install rocrate
 !pip install deims
 
-from rocrate.rocrate import ROCrate
+from rocrate.rocrate import ROCrate # tested with rocrate 0.10.0
 from rocrate.model.contextentity import ContextEntity
 import json
 import deims
 from urllib.request import urlopen
+
+# Create RO Crates from BioDT B2Share records
+#
+# written for the BioDT project https://doi.org/10.3030/101057437   
+# Feb 2024
 
 # query B2Share API for LTER, BioDT and Grassland records
 url = "https://b2share.eudat.eu/api/records/?q=keywords.keyword=%27BioDT%20AND%20Grassland%20pDT%27&community=d952913c-451e-4b5c-817e-d578dc8a4469"
@@ -30,12 +35,10 @@ for record in json_response['hits']['hits']:
 
     list_of_related_files = []
 
-    # define licence for B2Share Grassland pDT records
-    # clarify authors
 
     deims_site_record = deims.getSiteById(deims_id)
 
-    current_crate = crate.add_dataset(crate, record["metadata"]["DOI"], properties={
+    current_crate = crate.add(ContextEntity(crate, "dataset", properties={
         "name": record["metadata"]["titles"][0]["title"],
         "description": record["metadata"]["descriptions"][0]["description"],
         "keywords": list_of_keyword_labels,
@@ -45,7 +48,7 @@ for record in json_response['hits']['hits']:
             "@id": deims_id
         },
         "hasPart": list_of_related_files
-    })
+    }))
 
     eLTER = crate.add(ContextEntity(crate, "https://elter-ri.eu/", properties={
         "@type": "Organization",
@@ -80,4 +83,4 @@ for record in json_response['hits']['hits']:
 
     current_crate.append_to("file", current_file)
 
-crate.write("grassland_crate")
+# crate.write("grassland_crate")
