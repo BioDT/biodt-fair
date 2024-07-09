@@ -47,6 +47,8 @@ for record in json_response['hits']['hits']:
         "spatialCoverage": {
             "@id": deims_id
         },
+        "creators": record["metadata"]["creators"],
+        "license": record["metadata"]["license"]["license"],
         "hasPart": list_of_related_files
     }))
 
@@ -82,5 +84,5 @@ for record in json_response['hits']['hits']:
         })
 
     current_crate.append_to("file", current_file)
-
-# crate.write("grassland_crate")
+    
+crate.write("grassland_crate")
