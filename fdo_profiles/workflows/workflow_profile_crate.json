@@ -19,6 +19,9 @@
         },
         {
           "@id": "#hasExample"
+        },
+        {
+          "@id": "#hasSchema"
         }
       ]
     },
@@ -63,6 +66,22 @@
       "@id": "https://github.com/BioDT/biodt-fair/blob/main/pdt_cwr/modgp-ro-crate-metadata.json",
       "@type": "CreativeWork",
       "encodingFormat": "text/html",
+      "about": "./"
+    },
+    {
+      "@id": "#hasSchema",
+      "@type": "ResourceDescriptor",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasArtifact": {
+        "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/workflows/workflow_shape.ttl"
+      }
+    },
+    {
+      "@id": "https://github.com/BioDT/biodt-fair/blob/main/fdo_profiles/workflows/workflow_shape.ttl",
+      "@type": "CreativeWork",
+      "encodingFormat": "text/turtle",
       "about": "./"
     },
     {
