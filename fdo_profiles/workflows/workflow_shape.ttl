@@ -1,0 +1,116 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix bioschemas: <http://bioschemas.org/> .
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix biodt: <https://w3id.org/ro/crate/1.1/>.
+@prefix wfrun: <https://w3id.org/ro/terms/workflow-run#> .
+
+
+# Dataset Shape
+schema:ComputationalWorkflow a sh:NodeShape, rdfs:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path schema:identifier ;
+        rdfs:label "Workflow identifier" ;
+        rdfs:comment "Ideally, a persistent identifier, such as a DOI" ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dcterms:conformsTo ;
+        rdfs:label "Workflow profile" ;
+        rdfs:comment "Standard, profile or schema the workflow conforms to" ;
+        sh:nodeKind sh:IRI ;
+        sh:hasValue "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE" ;
+        sh:minCount 1 ; sh:maxCount 1;
+    ] ;
+    sh:property [
+        sh:path schema:name ;
+        sh:name "Workflow name" ;
+        rdfs:comment "A descriptive name for the workflow (for human-readability)" ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:description ;
+        rdfs:label "Dataset description" ;
+        rdfs:comment "A short text explaining what this workflow does (for human-readability)" ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:dateCreated ;
+        rdfs:label "Date Created" ;
+        rdfs:comment "Date of creation of the workflow" ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype schema:DateTime ;
+        sh:minCount 1; sh:maxCount 1;
+    ] ;
+    sh:property [
+        sh:path [ sh:alternativePath ( schema:creator schema:author ) ] ;
+        rdfs:label "Author" ;
+        rdfs:comment "The person(s) who created this workflow" ;
+#        sh:datatype schema:Person  ;
+        sh:class schema:Person ;
+#        sh:node schema:Person ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:keywords ;
+        rdfs:label "Keywords" ;
+        rdfs:comment "A minimum of 3 keywords relevant for this workflow, separated by commas" ;
+        sh:nodeKind sh:Literal ;
+        sh:datatype xsd:string ;
+        sh:minCount 3;
+    ] ;
+    sh:property [
+        sh:path schema:license  ;
+        rdfs:label "Licence" ;
+        rdfs:comment "The licence under which this workflow can be shared and reused." ;
+        sh:nodeKind sh:IRIOrLiteral ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path bioschemas:input ;
+        rdfs:label "Input" ;
+        rdfs:comment "The input (files, parameters...) needed for the execution of the workflow." ;
+        sh:or (
+                [sh:class schema:SoftwareSourceCode ]
+                [sh:class schema:Dataset ]
+                [sh:class schema:PropertyValueSpecification ]
+              ) ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+    ] ;
+    sh:property [
+        sh:path bioschemas:output ;
+        rdfs:label "output" ;
+        rdfs:comment "The output (files, data, code...) produced as a result of the execution of the workflow." ;
+        sh:or (
+                [sh:class schema:SoftwareSourceCode ]
+                [sh:class schema:Dataset ]
+              ) ;
+        sh:severity sh:Warning ;
+    ] ;
+    sh:property [
+        sh:path schema:version ;
+        rdfs:label "Workflow version" ;
+        rdfs:comment "The version number for this workflow." ;
+        sh:nodeKind sh:IRIOrLiteral ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ; sh:maxCount 1;
+    ] ;
+    sh:property [
+        sh:path schema:programmingLanguage ;
+        rdfs:label "Programming language" ;
+        rdfs:comment "The programming or workflow language this workflow is written in." ;
+        sh:nodeKind sh:IRIOrLiteral ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+    ] .
