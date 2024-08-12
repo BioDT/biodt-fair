@@ -1,0 +1,137 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "creator_name": "Mony, Cendrine",
+                    "family_name": "Mony",
+                    "given_name": "Cendrine"
+                },
+                {
+                    "creator_name": "Houet, Thomas",
+                    "family_name": "Houet",
+                    "given_name": "Thomas"
+                },
+                {
+                    "creator_name": "Alignier, Audrey",
+                    "family_name": "Alignier",
+                    "given_name": "Audrey"
+                }
+            ],
+            "dateCreated": [
+                "2024-07-03T11:09:18.462700+00:00"
+            ],
+            "datePublished": "2024-08-12T09:45:02+00:00",
+            "description": "Vegetation cover data as\nused for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/d54190ac-0615-497a-935f-3acb199c77a6"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/7c5662ea-5f0f-4f41-a881-db2af1c0d7b4"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/20f3b1cb-2fdf-4727-9ee3-301b517b9175"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/a3bdd4e3-e234-4887-8bc2-0f4645875311"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/7330515c-6a57-4d8a-97ab-8097745535da"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.a92f5322bc83447b881f456ba51fdb4c"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Zone Atelier Armorique (France) - 2015, 2018, 2021",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/31e67a47-5f15-40ad-9a72-f6f0ee4ecff6"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/31e67a47-5f15-40ad-9a72-f6f0ee4ecff6",
+            "@type": "Place",
+            "description": "The LTSER Zone Atelier Armorique belongs to LTER-France network and is located in nord westen France. The ZA Armorique conducts an interdisciplinary exploration of landscapes from urban areas to rural countryside, integrating social and environmental dynamics.",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "lat": "48.6",
+                "lon": "-1.53333"
+            },
+            "name": "LTSER Zone Atelier Armorique"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/d54190ac-0615-497a-935f-3acb199c77a6",
+            "@type": "File",
+            "contentSize": "144183",
+            "name": "FR_AtelierArmorique_data_cover.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/7c5662ea-5f0f-4f41-a881-db2af1c0d7b4",
+            "@type": "File",
+            "contentSize": "7925",
+            "name": "FR_AtelierArmorique_data_indices.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/20f3b1cb-2fdf-4727-9ee3-301b517b9175",
+            "@type": "File",
+            "contentSize": "1344",
+            "name": "FR_AtelierArmorique_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/a3bdd4e3-e234-4887-8bc2-0f4645875311",
+            "@type": "File",
+            "contentSize": "10796",
+            "name": "FR_AtelierArmorique_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/7330515c-6a57-4d8a-97ab-8097745535da",
+            "@type": "File",
+            "contentSize": "2792",
+            "name": "FR_AtelierArmorique_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

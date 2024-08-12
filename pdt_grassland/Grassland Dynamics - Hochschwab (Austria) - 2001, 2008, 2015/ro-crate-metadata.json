@@ -1,0 +1,163 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "creator_name": "Pauli, Harald",
+                    "family_name": "Pauli",
+                    "given_name": "Harald"
+                }
+            ],
+            "dateCreated": [
+                "2024-04-30T09:47:32.020656+00:00"
+            ],
+            "datePublished": "2024-08-12T09:45:02+00:00",
+            "description": "species cover according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf (p 38);\non each of four summits, the four 1x1m corner plots of a 3x3m grid in each cardinal direction 5m below the highest summit point (GLORIA Field Manual, p 31) at Hochschwab (Austria)\n\nabundance according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf: \n1=very rare, 2=rare, 3=rare-scattered, 4=scattered, 5=scattered-common, 6=common, 7=common-dominant, 8=dominant (cf. p 41f.)\ndimless;each of four summits is divided in 4 summit area sections from 0-5 m below the highest summit point and from 5-10 m below the highest summit point (GLORIA Field Manual, p 34) at Hochschwab (Austria)",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/ca1dcc97-1d20-450e-b4fe-391a7c31def8"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/d1559232-6869-41ac-96ee-ec7228189a5e"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/55ca454b-aba4-45dc-a39a-788d7af46ebb"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/b5574a74-d33a-4b69-9a49-9798984bdbe8"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/b4aa8159-08e3-4ce4-a499-b0858477c2fc"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/a96d78c6-ee33-473d-8f0f-dd4701766705"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/863f6aa8-9182-49bc-9cac-2c458c729dd6"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/d6a85c8e-8159-4c40-b47f-b8c6567b2b65"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/1a225c4f-0112-4512-9746-f39a64d0fef0"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.09d5592f9545489aa01b3b2e051b0666"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Hochschwab (Austria) - 2001, 2008, 2015",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/4ac03ec3-39d9-4ca1-a925-b6c1ae80c90d"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/4ac03ec3-39d9-4ca1-a925-b6c1ae80c90d",
+            "@type": "Place",
+            "description": "GLORIA Target region\r\n\r\nThe site lies in the alpine zone of Hochschwab in the NE-Alps. It is defined as a standard Target region of the GLORIA network (www.gloria.ac.at). Hochschwab_GLORIA was the networks first test site for standardised monitoring of alpine summit vegetation established in 1998. Regular monitoring started in 2001 as part of the EU-FP-5 project GLORIA-Europe. All permanenent plots were resurveyed in 2008 and in 2015. The site consists of 4 separate summit sites arranged along the elevation gradient between 1910 and 2255m. The main scientific purpose is to detect impacts of climate change on alpine vegetation and its biodiversity. \r\nIn addition, downslope transects to the treeline ecotone were established in 2008, diversity of soil nematodes were studied at the GLORIA summit areas and the region was part of an assessment of useful plants of the alpine life zone.\r\nFor the sampling design and recording methods see the GLORIA Field manual and update documents downloadable under: http://www.gloria.ac.at/?a=20",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "lat": "47.62202",
+                "lon": "15.149292"
+            },
+            "name": "Hochschwab (AT-HSW) GLORIA"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/ca1dcc97-1d20-450e-b4fe-391a7c31def8",
+            "@type": "File",
+            "contentSize": "181",
+            "name": "AT_Hochschwab_abund_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/d1559232-6869-41ac-96ee-ec7228189a5e",
+            "@type": "File",
+            "contentSize": "973231",
+            "name": "AT_Hochschwab_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/55ca454b-aba4-45dc-a39a-788d7af46ebb",
+            "@type": "File",
+            "contentSize": "676795",
+            "name": "AT_Hochschwab_data_cover.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/b5574a74-d33a-4b69-9a49-9798984bdbe8",
+            "@type": "File",
+            "contentSize": "38643",
+            "name": "AT_Hochschwab_event.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/b4aa8159-08e3-4ce4-a499-b0858477c2fc",
+            "@type": "File",
+            "contentSize": "197",
+            "name": "AT_Hochschwab_flagqua_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/a96d78c6-ee33-473d-8f0f-dd4701766705",
+            "@type": "File",
+            "contentSize": "131",
+            "name": "AT_Hochschwab_license.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/863f6aa8-9182-49bc-9cac-2c458c729dd6",
+            "@type": "File",
+            "contentSize": "805",
+            "name": "AT_Hochschwab_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/d6a85c8e-8159-4c40-b47f-b8c6567b2b65",
+            "@type": "File",
+            "contentSize": "22637",
+            "name": "AT_Hochschwab_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/1a225c4f-0112-4512-9746-f39a64d0fef0",
+            "@type": "File",
+            "contentSize": "9744",
+            "name": "AT_Hochschwab_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}
