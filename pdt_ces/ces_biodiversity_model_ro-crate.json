@@ -1,20 +1,13 @@
 {
   "@context": [
-    "http://doi.org/10.5063/schema/codemeta-2.0",
-    "http://w3id.org/ro/crate/1.2-DRAFT/context",
-    {
-      "coordinatePrecision": "http://rs.tdwg.org/dwc/terms/coordinatePrecision",
-      "taxonID": "http://rs.tdwg.org/dwc/terms/taxonID",
-      "measurementType": "http://rs.tdwg.org/dwc/terms/measurementType",
-      "measurementUnit": "http://rs.tdwg.org/dwc/terms/measurementUnit"
-    }
+    "https://w3id.org/ro/crate/1.1"
   ],
   "@graph": [
     {
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
       "about": {"@id": "./"},
-      "conformsTo": {"@id": "http://w3id.org/ro/crate/1.2-DRAFT"},
+      "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
       "author": {"@id": "http://orcid.org/0000-0003-0401-5122"}
     },
     {
@@ -24,40 +17,39 @@
       "name": "Cultural Ecosystem Services pDT - Biodiversity Model",
       "description": "Species distribution models for species that provide cultural ecosystem services.",
       "dateCreated": "2023-06-29",
-      "dateModified": "2023-09-10",
       "license": {"@id": "https://spdx.org/licenses/MIT.html"},
       "author": [
         {"@id": "https://orcid.org/0000-0001-6755-9456"},
         {"@id": "https://orcid.org/0000-0003-2428-272X"},
-        {"@id": "https://orcid.org/TODO-XXXX-XXXX-XXX1"},
         {"@id": "https://orcid.org/0009-0003-5290-786X"},
         {"@id": "https://orcid.org/0000-0002-4180-9338"},
         {"@id": "https://orcid.org/0000-0003-0401-5122"}
       ],
-      "citation": {"@id": ""},
-      "taxonID": "",
-      "contentLocation": {"@id": "https://sws.geonames.org/10104113/"},
-      "temporalCoverage": "2023-11-01T00:00:00Z--2023-11-13T12:10:00Z",
-      "temporalResolution": "",
-      "measurementType": "citizen science; field survey",
-      "measurementUnit": "point occurrence",
-      "predictorsType": "climatic; habitat; topographic",
-      "modelObjective": "Mapping and interpolation",
-      "modelTargetOutput": "Maps of potential species presence",
-      "modelHypotheses": "NA",
-      "modelAssumptions": "We assume that there is no temporal changes in environmental variables, that the abiotic variables is the sole predictor of species distributions other than biotic variables.",
-      "modelAlgorithms": "glm; svm; gaussian process model",
-      "modelComplexity": "A variety of models were used without making run time too extensive.",
-      "modelAveraging": "We calculated a mean weighted average based on model performance",
-      "modelWorkflow": "Pulled data from GBIF, conducts data thinning, fits model, and builds ensemble from models and predicts in space.",
       "codeRepository": "https://github.com/BioDT/uc-ces/tree/main/biodiversity_model",
-      "contributors": "",
+      "contributors": [
+        {"@id": "https://orcid.org/0000-0001-6755-9456"},
+        {"@id": "https://orcid.org/0009-0003-5290-786X"}
+      ],
       "softwareVersion": "0.1.0",
-      "runtimePlatform": "Docker",
       "programmingLanguage": "R",
-      "operatingSystem": ["Linux", "Windows", "Mac"],
-      "softwareRequirements": ["tidymodels", "terra", "rbif"],
-      "supportingData": ""
+      "softwareRequirements": ["readr", "rmarkdown", "dplyr", "spThin", "knitr", "fields", "viridisLite", "spam", "rgbif", "flexsdm", "sf", "terra"],
+      "supportingData":[
+        {"@id": "https://doi.org/10.15468/dl.b3n3r9"}
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.15468/dl.b3n3r9",
+      "@type": "DataFeed",
+      "name": "Species occurrence data from the Cairngorms, Scotland",
+      "description": "Species occurrence data from the Cairngorms, Scotland was obtained by download from GBIF. We filtered environmental variables to only include environment data from within a 5 km buffer of recorded occurrences, and conducted spatial thinning.",
+      "variableMeasured": "species occurrence",
+      "measurementTechnique": "",
+      "spatialCoverage": {"@id": "https://sws.geonames.org/10104113/"},
+      "temporalCoverage": "",
+      "encodingFormat": "",
+      "contentSize": "179 KB",
+      "version": "",
+      "publisher": "GBIF"
     },
     {
       "@id": "https://sws.geonames.org/10104113/",
@@ -68,11 +60,8 @@
         "@type": "GeoCoordinates",
         "latitude": "57.04395",
         "longitude": "-3.60334",
-        "box": ["", "", "", ""],
-        "name": "Latitude: 57.04395 Longitude: -3.60334",
-        "coordinatePrecision": "0.1"
-      },
-      "spatialCoverage": "political"
+        "name": "Latitude: 57.04395 Longitude: -3.60334"
+      }
     },
     {
       "@id": "https://orcid.org/0000-0001-6755-9456",
@@ -85,14 +74,6 @@
       "@id": "https://orcid.org/0000-0003-2428-272X",
       "@type": "Person",
       "name": "Chris Andrews",
-      "email": "",
-      "affiliation": {"@id": "https://ror.org/00pggkr55"}
-    },
-    {
-      "@id": "https://orcid.org/TODO-XXXX-XXXX-XXX1",
-      "@type": "Person",
-      "name": "Will Bolton",
-      "email": "",
       "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
@@ -106,7 +87,6 @@
       "@id": "https://orcid.org/0000-0002-4180-9338",
       "@type": "Person",
       "name": "Jan Dick",
-      "email": "",
       "affiliation": {"@id": "https://ror.org/00pggkr55"}
     },
     {
@@ -114,13 +94,11 @@
       "@type": "Organization",
       "name": "UK Centre for Ecology & Hydrology",
       "url": "https://www.ceh.ac.uk/"
-
     },
     {
       "@id": "http://orcid.org/0000-0003-0401-5122",
       "@type": "Person",
       "name": "Julian Lopez Gordillo",
-      "email": "julian.lopezgordillo@naturalis.nl",
       "affiliation": {"@id": "https://ror.org/0566bfb96"}
     },
     {
@@ -133,14 +111,19 @@
       "@id": "http://orcid.org/0000-0002-0655-3699",
       "@type": "Person",
       "name": "Christoph Wohner",
-      "email": "",
       "affiliation": {"@id": "https://ror.org/013vyke20"}
     },
     {
       "@id": "https://ror.org/013vyke20",
       "@type": "Organization",
       "name": "Environment Agency Austria",
-      "url": ""
+      "url": "http://www.umweltbundesamt.at/en/"
+    },
+    {
+      "@id": "https://ror.org/05fjyn938",
+      "@type": "Organization",
+      "name": "Global Biodiversity Information Facility",
+      "url": "https://www.gbif.org/"
     },
     {
       "@id": "https://spdx.org/licenses/MIT.html",
