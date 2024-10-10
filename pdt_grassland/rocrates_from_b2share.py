@@ -1,7 +1,7 @@
 # Create RO Crates from BioDT B2Share records
 #
 # written for the BioDT project https://doi.org/10.3030/101057437
-# July 2024
+# Oct 2024
 
 !pip install rocrate
 !pip install deims
@@ -11,11 +11,6 @@ from rocrate.model.contextentity import ContextEntity
 import json
 import deims
 from urllib.request import urlopen
-
-# Create RO Crates from BioDT B2Share records
-#
-# written for the BioDT project https://doi.org/10.3030/101057437   
-# Feb 2024
 
 # query B2Share API for LTER, BioDT and Grassland records
 url = "https://b2share.eudat.eu/api/records/?q=keywords.keyword=%27BioDT%20AND%20Grassland%20pDT%27&community=d952913c-451e-4b5c-817e-d578dc8a4469"
@@ -35,6 +30,15 @@ for record in json_response['hits']['hits']:
 
     list_of_related_files = []
 
+    creators = []
+    for creator in record["metadata"]["creators"]:
+        creator_object = {
+            "@id": creator["creator_name"],
+            "creator_name": creator["creator_name"],
+            "family_name": creator["family_name"],
+            "given_name": creator["given_name"]
+        }
+        creators.append(creator_object)
 
     deims_site_record = deims.getSiteById(deims_id)
 
@@ -47,7 +51,7 @@ for record in json_response['hits']['hits']:
         "spatialCoverage": {
             "@id": deims_id
         },
-        "creators": record["metadata"]["creators"],
+        "creators": creators,
         "license": record["metadata"]["license"]["license"],
         "hasPart": list_of_related_files
     }))
@@ -70,6 +74,7 @@ for record in json_response['hits']['hits']:
         "description": deims_site_record["attributes"]["general"]["abstract"],
         "geo": {
             "@type": "GeoCoordinates",
+            "@id": deims_id,
             "lat": coordinates[1],
             "lon": coordinates[0],
         }
