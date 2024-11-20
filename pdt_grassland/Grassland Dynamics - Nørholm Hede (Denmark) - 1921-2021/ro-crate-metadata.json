@@ -1,0 +1,116 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Kappel Schmidt, Inger"
+                },
+                {
+                    "@id": "#Kepfer Rojas, Sebastian"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-16T09:05:34.846696+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here:\nhttps://doi.org/10.23728/b2share.d4037ff5a1fe4a20b28ead7010cf74ba",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/4792d340-db0e-4b6b-8262-978fd409c242"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/5db95a85-26fd-4a45-b53c-f16c7f523a95"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.0e5405ed131541799211f696763a71c1"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - N\u00f8rholm Hede (Denmark) - 1921-2021",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/b356da08-15ac-42ad-ba71-aadb22845621"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Kappel Schmidt, Inger",
+            "@type": "Person",
+            "creator_name": "Kappel Schmidt, Inger",
+            "family_name": "Kappel Schmidt",
+            "given_name": "Inger"
+        },
+        {
+            "@id": "#Kepfer Rojas, Sebastian",
+            "@type": "Person",
+            "creator_name": "Kepfer Rojas, Sebastian",
+            "family_name": "Kepfer Rojas",
+            "given_name": "Sebastian"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/b356da08-15ac-42ad-ba71-aadb22845621",
+            "@type": "Place",
+            "description": "N\u00f8rholm Hede (Heath) is situated in the southwestern part of Denmark (8\u00ba 37\u00b4 E, 55\u00ba 41\u00b4 N). The 350 ha heath was abandoned and left for free succession since 1895. It was legally protected in 1913 and succession from heather dominated heath over crowberry heath or grass dominated heath towards forest has continued without human interference for about 120 years. Already in 1921, the first survey of tree colonization and development of flora was conducted in permanent grid and plots. Since 1921 a total of 10 surveys have been conducted.\r\nThe soil is fluvioglacial sand covered by shifting sand in the eastern part. The soil is a sandy podzol but especially in areas with cultivated fields, the profile includes an Ap horizon of 15 to 30 cm and the mor layer is thinner. \r\nThe western part of the heath was cultivated until 1820 and again in 1870 (Fig 1a). The central and eastern part of the heath is old podsolized dry heathland, which has never been cultivated. Sheep and cattle grazed the heath until about 1895. The fields were probably abandoned several years before. Since 1895 only occasional exploitation of the gravel has occurred. ",
+            "geo": {
+                "@id": "https://deims.org/b356da08-15ac-42ad-ba71-aadb22845621",
+                "@type": "GeoCoordinates",
+                "lat": "55.68",
+                "lon": "8.61"
+            },
+            "name": "N\u00f8rholm Hede"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/4792d340-db0e-4b6b-8262-978fd409c242",
+            "@type": "File",
+            "contentSize": "60977",
+            "name": "DK_NorholmHede_data_cover.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/5db95a85-26fd-4a45-b53c-f16c7f523a95",
+            "@type": "File",
+            "contentSize": "182",
+            "name": "DK_NorholmHede_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

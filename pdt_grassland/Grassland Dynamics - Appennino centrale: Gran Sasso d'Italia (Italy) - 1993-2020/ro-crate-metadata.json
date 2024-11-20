@@ -1,0 +1,124 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Canullo, Roberto"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T07:26:07.148714+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here: https://doi.org/10.3897/natureconservation.34.30218.suppl1",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/5761c87c-81b9-49ef-b4cc-521f6e44bd54"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/998ad6ae-cacc-45f5-a3cd-d2f7e22f1cee"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/85e02dc3-485e-405f-a812-3501e7c8919e"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/25485865-6782-46d6-9458-948f2e4780c4"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.6d5c932698e340648789d948d74e1fc7"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Appennino centrale: Gran Sasso d'Italia (Italy) - 1993-2020",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/c0738b00-854c-418f-8d4f-69b03486e9fd"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Canullo, Roberto",
+            "@type": "Person",
+            "creator_name": "Canullo, Roberto",
+            "family_name": "Canullo",
+            "given_name": "Roberto"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/c0738b00-854c-418f-8d4f-69b03486e9fd",
+            "@type": "Place",
+            "description": "The site consists of high elevation vegetation in central Mediterranean basin, along the Apennines mountain range: xerophitic primary grassland (Pediculari elegantis-Seslerietum tenuifoliae) and mesophitic primary grassland (Luzulo italiacae-Festucetum macratherae), with important resident and migratory bird communities.\r\nSix plots, each one 100 m2 large, grouped in two cluster-plots including each one three plots, representative of a larger area of 0,5 km2 ca., ranging from 2100 to 2300 m a.s.l. (alpic and Mediterranean high-mountain belts.",
+            "geo": {
+                "@id": "https://deims.org/c0738b00-854c-418f-8d4f-69b03486e9fd",
+                "@type": "GeoCoordinates",
+                "lat": "42.44625",
+                "lon": "13.554978"
+            },
+            "name": "Appennino centrale: Gran Sasso d'Italia"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/5761c87c-81b9-49ef-b4cc-521f6e44bd54",
+            "@type": "File",
+            "contentSize": "293019",
+            "name": "IT_AppenninoCentrale_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/998ad6ae-cacc-45f5-a3cd-d2f7e22f1cee",
+            "@type": "File",
+            "contentSize": "244",
+            "name": "IT_AppenninoCentrale_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/85e02dc3-485e-405f-a812-3501e7c8919e",
+            "@type": "File",
+            "contentSize": "13515",
+            "name": "IT_AppenninoCentrale_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/25485865-6782-46d6-9458-948f2e4780c4",
+            "@type": "File",
+            "contentSize": "292",
+            "name": "IT_AppenninoCentrale_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

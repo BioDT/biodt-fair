@@ -1,0 +1,106 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Melecis, Viesturs"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T13:38:55.651419+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here: http://doi.org/10.23728/b2share.fd8970a8bb59400c93f15618db8a00e0",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/0492fc52-83b4-453d-b077-ba852511e571"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/b3ef5d4b-202b-44e8-83b0-1e83bba8755f"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.248a714052f743e4969ac7f23412fcb4"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - LTSER Engure (Latvia) - 1997-2008",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/66431807-ebf1-477f-aa52-3716542f3378"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Melecis, Viesturs",
+            "@type": "Person",
+            "creator_name": "Melecis, Viesturs",
+            "family_name": "Melecis",
+            "given_name": "Viesturs"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/66431807-ebf1-477f-aa52-3716542f3378",
+            "@type": "Place",
+            "description": "Lake Engure drainage area (644 sq.km) includes  the  Lake which is a remnant of Litorina sea formed about 4000 years ago.  Part of the territory is the Lake Engure Nature Park, the Ramsar site including unique inland and marine wetlands. Most of the drainage area is covered by pine forests, but there are also large areas of marshlands, meadows, deciduous forests, dunes and agricultural lands. Avifauna lists 186 species,   vascular plants \u2013 844 species.  44 species of birds, 5 fish species and 3 plant species are protected at European level, 23 habitats are in EU Habitat Directive.  The ecosystems of the area have been changed by different human activities historically well documented.  The most important activities in ancient times included regulation of water level, hay making, pasturing, hunting, and fishery. The traditional settlement type was the former fishermen's village, which is characterized by its linear structure along the seashore and farmsteads inland. During the past decade, such settlements have been subject to a wave of summer cottage, second home and guest house construction. The agriculture and main industry (fishing and fish processing) has sharply declined. Nowadays, the highest number of employees is in the service sector (wholesale, catering, tourism and leisure industries). It sets a new kind of pressure to the ecosystems of the region.  ",
+            "geo": {
+                "@id": "https://deims.org/66431807-ebf1-477f-aa52-3716542f3378",
+                "@type": "GeoCoordinates",
+                "lat": "57.2167",
+                "lon": "23.135"
+            },
+            "name": "LTSER Engure"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/0492fc52-83b4-453d-b077-ba852511e571",
+            "@type": "File",
+            "contentSize": "384935",
+            "name": "LV_Engure_data_cover.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/b3ef5d4b-202b-44e8-83b0-1e83bba8755f",
+            "@type": "File",
+            "contentSize": "827",
+            "name": "LV_Engure_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "creator_name": "Fontana, Veronika",
+                    "family_name": "Fontana",
+                    "given_name": "Veronika"
+                },
+                {
+                    "creator_name": "Crepaz, Harald",
+                    "family_name": "Crepaz",
+                    "given_name": "Harald"
+                }
+            ],
+            "dateCreated": [
+                "2024-07-03T10:53:22.544169+00:00"
+            ],
+            "datePublished": "2024-08-12T09:45:02+00:00",
+            "description": "Vegetation Abundance data as\nused for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/34524a96-0186-496b-803f-9a47ba797159"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/adcb2b8f-399a-4260-b35c-dbd64fc59343"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/39fa9a0c-6171-4972-b9b2-fec290d59dd7"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.db90a22af6524a93988b17999fdfffce"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Matschertal/Val Mazia (Italy) - 2009-2010",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/11696de6-0ab9-4c94-a06b-7ce40f56c964"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/11696de6-0ab9-4c94-a06b-7ce40f56c964",
+            "@type": "Place",
+            "description": "The first data in the Matsch| Mazia valley was collected in the year 2008.  Originally  aimed  at studying  climatic change impacts on dry mountain grassland, the measuring activities have been strongly  expanded  throughout  the  years.    Today's activities on the site include process-oriented  ecological  research covering time (historical analysis, actual processes and future scenarios ) and space (from plot to landscape scale among different ecosystems) within a human-influenced catchment.  \r\nThe  valley  is  situated  in  the  central  Alps  in the westernmost part of South Tyrol in North Italy. Matsch is a side valley of the Vinschgau valley, and extends over 90 km2 reaching  from  950 m.a.s.l.  to  3700 m.a.sl.  at  the highest peak. The main village Matsch is located at 1600 m and has 458 inhabitants.Due to its protected location in the central Alps, the Mazia/Matsch valley represents one of the driest spots within the whole alpine range, with a mean annual precipitation of 525mm at 1500m.a.s.l  (1950-2010) \r\n\r\n\r\n\r\n \r\n",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "lat": "46.6928",
+                "lon": "10.6157"
+            },
+            "name": "IT25 - Val Mazia/Matschertal"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/34524a96-0186-496b-803f-9a47ba797159",
+            "@type": "File",
+            "contentSize": "948943",
+            "name": "IT_Matschertal_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/adcb2b8f-399a-4260-b35c-dbd64fc59343",
+            "@type": "File",
+            "contentSize": "89",
+            "name": "IT_Matschertal_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/39fa9a0c-6171-4972-b9b2-fec290d59dd7",
+            "@type": "File",
+            "contentSize": "623826",
+            "name": "IT_Matschertal_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}
