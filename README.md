@@ -47,4 +47,4 @@ This repo contains mostly JSON metadata files and isolated Python scripts taken 
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[European Union Public Licence v. 1.2](https://eupl.eu/1.2/en/)
