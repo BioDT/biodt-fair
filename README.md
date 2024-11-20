@@ -34,4 +34,4 @@ This repository also hosts other tools helpful for collaboration. Although most 
 - The [Wiki](https://github.com/BioDT/biodt-fair/wiki) tab: for more general information about the FAIR aspects of BioDT, such as previous decisions made in the project. This used to take place in the Confluence wiki, but the goal is to have here content related to FAIR for its usefulness beyond the BioDT project and for the wider community.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[European Union Public Licence v. 1.2](https://eupl.eu/1.2/en/)
