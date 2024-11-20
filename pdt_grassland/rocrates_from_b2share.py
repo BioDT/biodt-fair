@@ -39,7 +39,7 @@ for record in json_response['hits']['hits']:
 
     creators = []
     for creator in record["metadata"]["creators"]:
-        creator_object = crate.add(PersonEntity(crate, creator["creator_name"], properties={
+        creator_object = crate.add(Person(crate, creator["creator_name"], properties={
             "creator_name": creator["creator_name"],
             "family_name": creator["family_name"],
             "given_name": creator["given_name"]

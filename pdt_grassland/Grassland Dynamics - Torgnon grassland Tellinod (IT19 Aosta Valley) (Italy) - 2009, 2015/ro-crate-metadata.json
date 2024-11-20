@@ -1,0 +1,124 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Galvagno, Marta"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T13:17:50.799328+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:41+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/abea297f-283a-4149-ab1c-298e6a680a0a"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/098bbd1c-5348-4b99-aee8-1d96d6d0ed0c"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/62b8b99d-7a51-46a8-9242-7c8ce2613a92"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/c32f69c6-56d6-4fe1-ba74-55b3cd3d5ceb"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.7198b4299b354a3a80be257cc3d0f87f"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Torgnon grassland Tellinod (IT19 Aosta Valley) (Italy) - 2009, 2015",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/a03ef869-aa6f-49cf-8e86-f791ee482ca9"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Galvagno, Marta",
+            "@type": "Person",
+            "creator_name": "Galvagno, Marta",
+            "family_name": "Galvagno",
+            "given_name": "Marta"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/a03ef869-aa6f-49cf-8e86-f791ee482ca9",
+            "@type": "Place",
+            "description": "Tellinod, Conca di Torgnon, (Torgnon, Aosta),  +389680 +5077920;  Valle d'Aosta region",
+            "geo": {
+                "@id": "https://deims.org/a03ef869-aa6f-49cf-8e86-f791ee482ca9",
+                "@type": "GeoCoordinates",
+                "lat": "45.846063181777",
+                "lon": "7.5790279272562"
+            },
+            "name": "Torgnon grassland Tellinod (IT19 Aosta Valley)"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/abea297f-283a-4149-ab1c-298e6a680a0a",
+            "@type": "File",
+            "contentSize": "14026",
+            "name": "IT_TorgnonGrasslandTellinod_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/098bbd1c-5348-4b99-aee8-1d96d6d0ed0c",
+            "@type": "File",
+            "contentSize": "383",
+            "name": "IT_TorgnonGrasslandTellinod_event.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/62b8b99d-7a51-46a8-9242-7c8ce2613a92",
+            "@type": "File",
+            "contentSize": "55",
+            "name": "IT_TorgnonGrasslandTellinod_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/c32f69c6-56d6-4fe1-ba74-55b3cd3d5ceb",
+            "@type": "File",
+            "contentSize": "183",
+            "name": "IT_TorgnonGrasslandTellinod_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

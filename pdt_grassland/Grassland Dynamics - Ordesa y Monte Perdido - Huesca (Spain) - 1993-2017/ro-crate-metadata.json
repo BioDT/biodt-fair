@@ -1,0 +1,124 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Garcia, Maria Begona"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-16T09:12:09.683194+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here:\nhttps://doi.org/10.23728/b2share.af3e88642fcb4a968c449b262c6ed506",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/4ca9ffa0-77c0-48ff-beac-33d2ba800e63"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/962a517e-51c9-4ad9-b093-ae24eb55f032"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/19a9afd8-67ab-4bb2-9604-fa2e5916ff3c"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/a2064a70-a935-4fc8-819b-776877c8a91f"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.d20e8129504c4971adb4cbc895ca2d2e"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Ordesa y Monte Perdido / Huesca (Spain) - 1993-2017",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/829a2bcc-79d6-462f-ae2c-13653124359d"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Garcia, Maria Begona",
+            "@type": "Person",
+            "creator_name": "Garcia, Maria Begona",
+            "family_name": "Garcia",
+            "given_name": "Maria Begona"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/829a2bcc-79d6-462f-ae2c-13653124359d",
+            "@type": "Place",
+            "description": "The Ordesa and Monte Perdido National Park (OMPNP) lies in the Southern slopes of the Central Pyrenees. It is in bounded to the north by the French border, and comprises 4 deep valleys occupying 15.608 ha: Ordesa, A\u00f1isclo, Escua\u00edn and the upper part of Pineta. The peripheral part spreads over 19.679 ha more, and extends along parts of other valleys: Bujaruelo, Vi\u00f3, Pu\u00e9rtolas, Pineta, and La Larri.\r\n\r\nThe ice and the water constitute the main eroding agents responsible for the landscape: glaciar valleys (U shape), river valleys (V shape), deep canyons, mountain lakes\u2026 Despite most of the park is dominated by the alpine belt and subalpine grasslands, the impressive orography creates a mosaic of small areas covered by contrasted ecological systems. Such environmental heterogeneity promotes a high diversity (1400 plant species). Two particular geomorphological processes are noticeable in the park: glaciar and periglacial processes and karstic dynamics. The Monte Perdido ice masses are the only ones that can be considered as glaciers, and they are composed of two separate bodies that have been greatly reduced during the last decades. Because of the carbonate nature of the bedrock, karstic processes are very active in the Park and are the main control of its hydrogeology.",
+            "geo": {
+                "@id": "https://deims.org/829a2bcc-79d6-462f-ae2c-13653124359d",
+                "@type": "GeoCoordinates",
+                "lat": "42.65",
+                "lon": "0.03"
+            },
+            "name": "Ordesa y Monte Perdido / Huesca ES"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/4ca9ffa0-77c0-48ff-beac-33d2ba800e63",
+            "@type": "File",
+            "contentSize": "273444",
+            "name": "ES_OrdesaYMontePerdido_data_freq.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/962a517e-51c9-4ad9-b093-ae24eb55f032",
+            "@type": "File",
+            "contentSize": "442",
+            "name": "ES_OrdesaYMontePerdido_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/19a9afd8-67ab-4bb2-9604-fa2e5916ff3c",
+            "@type": "File",
+            "contentSize": "557",
+            "name": "ES_OrdesaYMontePerdido_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/a2064a70-a935-4fc8-819b-776877c8a91f",
+            "@type": "File",
+            "contentSize": "237",
+            "name": "ES_OrdesaYMontePerdido_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Melecis, Viesturs"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T13:41:23.527022+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here: https://doi.org/10.23728/b2share.7e7e553d85f44735b59b313a12745170",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/986ca468-fa6f-4202-bc07-f1a09abfa20b"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/a87d67bd-9466-4265-bc55-643949b781c9"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.6a61d73a3f504abbb00684c709f30cb1"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Randu meadows (Latvia) - 1997-2008",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/61c188bc-8915-4488-8d92-6d38483406c0"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Melecis, Viesturs",
+            "@type": "Person",
+            "creator_name": "Melecis, Viesturs",
+            "family_name": "Melecis",
+            "given_name": "Viesturs"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/61c188bc-8915-4488-8d92-6d38483406c0",
+            "@type": "Place",
+            "description": "Botanical reserve \u201cRandu meadows\u201d is situated on the northern coast of the Riga Gulf. The botanical reserve is a part of the North Vidzeme Biosphere Reserve. It represents about 200 ha of unique coastal meadows with high habitat and species diversity. There were recorded 531 plant species, 42 are rare and protected in Latvia, 2 species are on the EU Biotope Directive 92/43/EEC list. Man has participated in the development of these littoral meadows for hundreds of years, by cattle grazing and hay harvesting. Recently, the intensity of grazing and mowing have sharply decreased, and the meadows are gradually overgrowing by reeds and shrubs. Wild cattle herd was introduced for some time in part of the grassland area in order to prevent overgrowth of meadows.\r\n",
+            "geo": {
+                "@id": "https://deims.org/61c188bc-8915-4488-8d92-6d38483406c0",
+                "@type": "GeoCoordinates",
+                "lat": "57.814301",
+                "lon": "24.339609"
+            },
+            "name": "Randu meadows"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/986ca468-fa6f-4202-bc07-f1a09abfa20b",
+            "@type": "File",
+            "contentSize": "1173110",
+            "name": "LV_RanduMeadows_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/a87d67bd-9466-4265-bc55-643949b781c9",
+            "@type": "File",
+            "contentSize": "1342",
+            "name": "LV_RanduMeadows_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

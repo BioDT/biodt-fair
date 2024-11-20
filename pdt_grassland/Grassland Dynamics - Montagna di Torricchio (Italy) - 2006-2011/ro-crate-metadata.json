@@ -1,0 +1,124 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Canullo, Roberto"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T07:57:03.952442+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:41+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/88ea0ee8-4989-4dc7-abb0-283642e1b5b7"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/f3943b99-e96f-4d53-816a-bda2a3f9b4a4"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/0222dd68-91b3-46ac-912c-e29293fbdf96"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/edbbf73d-edf8-4711-9bf8-2d41bfd97bce"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.afc31a2e4e544b849f3431d6709826ce"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Montagna di Torricchio (Italy) - 2006-2011",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/6b62feb2-61bf-47e1-b97f-0e909c408db8"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Canullo, Roberto",
+            "@type": "Person",
+            "creator_name": "Canullo, Roberto",
+            "family_name": "Canullo",
+            "given_name": "Roberto"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/6b62feb2-61bf-47e1-b97f-0e909c408db8",
+            "@type": "Place",
+            "description": "The protected area \u201cRiserva Naturale Montagna di Torricchio\u201d is a strict nature reserve and education since 1970, Biogenetic Reserve  since 1979, State Nature Reserve  since 1991 then it became part of the Nature 2000 network as SIC & ZPS. A part of the reserve is covered by mowing lawns, subjected to an orientated regime in order to maintain this type of semi-natural vegetation, otherwise destined to disappear through the processes of secondary succession. It cover 317 Ha and represents the typical landscape of the Central Apennines: 90 ha deciduous mountain forests (old beech and mixed woods); 220 ha dry grasslands (abandoned pastures with shrubs; Bromus erectus, Cytisus sessilifolius); 7 ha mesic grasslands (mowed and pastured meadows; Cynosurus cristatus). The Reserve is  equipped with meteorological instrumentation for the detection of air/soil  temperature and moisture and  wind /rain  gauge.  It provides permanent plots and a field mountain hut. Various types of ecological investigations are carried out as  flora and fauna inventory and monitoring; structure and dynamics of beech forest; population dynamics and secondary succession on xeric grasslands; plant diversity evaluation by estimation methods; structure and functions of mowed meadows, effects of  extreme events. \r\n",
+            "geo": {
+                "@id": "https://deims.org/6b62feb2-61bf-47e1-b97f-0e909c408db8",
+                "@type": "GeoCoordinates",
+                "lat": "42.9614",
+                "lon": "13.0192"
+            },
+            "name": "Montagna di Torricchio"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/88ea0ee8-4989-4dc7-abb0-283642e1b5b7",
+            "@type": "File",
+            "contentSize": "38919",
+            "name": "IT_MontagnadiTorricchio_data_abund.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/f3943b99-e96f-4d53-816a-bda2a3f9b4a4",
+            "@type": "File",
+            "contentSize": "303",
+            "name": "IT_MontagnadiTorricchio_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/0222dd68-91b3-46ac-912c-e29293fbdf96",
+            "@type": "File",
+            "contentSize": "14343",
+            "name": "IT_MontagnadiTorricchio_reference.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/edbbf73d-edf8-4711-9bf8-2d41bfd97bce",
+            "@type": "File",
+            "contentSize": "556",
+            "name": "IT_MontagnadiTorricchio_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

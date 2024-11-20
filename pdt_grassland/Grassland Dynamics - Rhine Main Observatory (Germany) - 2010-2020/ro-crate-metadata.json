@@ -1,0 +1,125 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Kulawig, Beatrice"
+                },
+                {
+                    "@id": "#Haase, Peter"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-16T08:51:29.181379+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here:\nhttps://doi.org/10.23728/b2share.0a9129711ab2447a8fc8e8ea18c89a98",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/30844a0b-c345-4de6-bd8f-b8e7aa5919d8"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/b68c4dd1-2cb4-4dda-b655-0843a4897b22"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/4405d651-d28d-4d41-903c-d92683aae6fc"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.7d674e57c5b34bd0bb43375773cf9a63"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - Rhine Main Observatory (Germany) - 2010-2020",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/9f9ba137-342d-4813-ae58-a60911c3abc1"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Kulawig, Beatrice",
+            "@type": "Person",
+            "creator_name": "Kulawig, Beatrice",
+            "family_name": "Kulawig",
+            "given_name": "Beatrice"
+        },
+        {
+            "@id": "#Haase, Peter",
+            "@type": "Person",
+            "creator_name": "Haase, Peter",
+            "family_name": "Haase",
+            "given_name": "Peter"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/9f9ba137-342d-4813-ae58-a60911c3abc1",
+            "@type": "Place",
+            "description": "The Rhine-Main-Observatory (RMO) covers the drainage basin of the Kinzig River in Hesse, Germany (~1060km\u00b2). Situated at the fringe of the Rhine-Main area, the second largest metropolitan area in Germany, the Kinzig River divides three lower mountain ranges (Rh\u00f6n, Vogelsberg, Spessart). Therefore, the Rhine-Main-Observatory includes both densely populated areas on the outskirts of the Rhine-Main metropolitan region as well as natural landscapes with little anthropogenic disturbance. This creates a highly diverse mosaic of land uses along a wide gradient of exploitation activities, from vibrant city centers to dense industrial areas; and from intensively and extensively used agricultural land, to heavily managed forests and natural reserves. The RMO was started officially in 2007, however many of the data series started much earlier. The scientific focus of the work in the RMO lies in understanding the role of land use and (micro-) climate in shaping meta-community structures in a fragmented river-floodplain ecosystem. The monitoring comprises a broad variety of permanent biotic and abiotic monitoring sites, as well as additional context-dependent monitoring schemes.",
+            "geo": {
+                "@id": "https://deims.org/9f9ba137-342d-4813-ae58-a60911c3abc1",
+                "@type": "GeoCoordinates",
+                "lat": "50.267302",
+                "lon": "9.269139"
+            },
+            "name": "Rhine-Main-Observatory"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/30844a0b-c345-4de6-bd8f-b8e7aa5919d8",
+            "@type": "File",
+            "contentSize": "2227563",
+            "name": "DE_RhineMainObservatory_abund_data.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/b68c4dd1-2cb4-4dda-b655-0843a4897b22",
+            "@type": "File",
+            "contentSize": "98",
+            "name": "DE_RhineMainObservatory_method.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/4405d651-d28d-4d41-903c-d92683aae6fc",
+            "@type": "File",
+            "contentSize": "19763",
+            "name": "DE_RhineMainObservatory_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}

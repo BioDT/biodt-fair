@@ -1,0 +1,126 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "creator": [
+                {
+                    "@id": "#Lischeid, Gunnar"
+                },
+                {
+                    "@id": "#Meier, Kristin"
+                },
+                {
+                    "@id": "#Grahmann, Kathrin"
+                }
+            ],
+            "dateCreated": [
+                "2024-10-08T06:56:51.896843+00:00"
+            ],
+            "datePublished": "2024-11-20T10:55:42+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/86864a5b-7822-42a2-95cd-0abc5ee334c8"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/08dbcf41-f992-42ab-9983-99da9c291c37"
+                }
+            ],
+            "identifier": [
+                "https://doi.org/10.23728/b2share.e0407b14872548fbb401605d492b1ac5"
+            ],
+            "keywords": [
+                "BioDT",
+                "Grassland pDT"
+            ],
+            "license": [
+                {
+                    "@id": "http://creativecommons.org/licenses/by/4.0/"
+                }
+            ],
+            "name": "Grassland Dynamics - AgroScapeLab Quillow (ZALF) (Germany) - 2000-2019",
+            "publisher": [
+                {
+                    "@id": "https://elter-ri.eu/"
+                }
+            ],
+            "spatialCoverage": [
+                {
+                    "@id": "https://deims.org/270a41c4-33a8-4da6-9258-2ab10916f262"
+                }
+            ],
+            "variableMeasured": [
+                "Grassland Dynamics"
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#Lischeid, Gunnar",
+            "@type": "Person",
+            "creator_name": "Lischeid, Gunnar",
+            "family_name": "Lischeid",
+            "given_name": "Gunnar"
+        },
+        {
+            "@id": "#Meier, Kristin",
+            "@type": "Person",
+            "creator_name": "Meier, Kristin",
+            "family_name": "Meier",
+            "given_name": "Kristin"
+        },
+        {
+            "@id": "#Grahmann, Kathrin",
+            "@type": "Person",
+            "creator_name": "Grahmann, Kathrin",
+            "family_name": "Grahmann",
+            "given_name": "Kathrin"
+        },
+        {
+            "@id": "https://elter-ri.eu/",
+            "@type": "Organization",
+            "name": "eLTER",
+            "url": "https://elter-ri.eu/"
+        },
+        {
+            "@id": "https://deims.org/270a41c4-33a8-4da6-9258-2ab10916f262",
+            "@type": "Place",
+            "description": "The  site covers the whole catchment of the small river \u201cQuillow\u201d and it is called \u201cAgroScapeLab Quillow\u201d. It is located in the north-east lowlands (Uckermark) which is about 90 km North of Berlin and has an area of about 160 km2. It\u2019s a hummocky landscape characterized by gently rolling hills which are the results of glaciation during the Pleistocene.  Unconsolidated sediments in a complex setting dominate. The soil pattern of the Quillow catchment is related to topography and the heterogeneity of Pleistocenic deposits. Albic Luvisols, Calcaric Regosols, Calcic Luvisols and Gleyic-Colluvic Regosols can be found. Another result of the ice age forces are the kettle holes (little ponds) which developed in drainless depressions.  74 % of the land is in agricultural use.  Small forest patches can be found in the western and southwestern part of the catchment, grassland more in the eastern lowlands.  In general the area is only sparsely populated. The ZALF research platform is located in Dedelow",
+            "geo": {
+                "@id": "https://deims.org/270a41c4-33a8-4da6-9258-2ab10916f262",
+                "@type": "GeoCoordinates",
+                "lat": "53.36",
+                "lon": "13.8"
+            },
+            "name": "AgroScapeLab Quillow (ZALF)"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/86864a5b-7822-42a2-95cd-0abc5ee334c8",
+            "@type": "File",
+            "contentSize": "1699477",
+            "name": "DE_AgroScapeQuillow_data_cover.csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/08dbcf41-f992-42ab-9983-99da9c291c37",
+            "@type": "File",
+            "contentSize": "11405",
+            "name": "DE_AgroScapeQuillow_station.csv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/4.0/",
+            "@type": "CreativeWork",
+            "identifier": "cc-by",
+            "name": "Creative Commons Attribution (CC-BY)"
+        }
+    ]
+}
