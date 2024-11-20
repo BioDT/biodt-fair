@@ -1,0 +1,17 @@
+- name: Home
+  link: /
+- name: About
+  link: /about
+- name: Metadata Profiles
+  link: /metadata_profiles
+  subitems:
+      - name: Kernel
+        link: /metadata_profiles/kernel
+      - name: Dataset
+        link: /metadata_profiles/dataset
+      - name: Model
+        link: /metadata_profiles/model
+      - name: Workflow
+        link: /metadata_profiles/workflow
+      - name: Mapping Set
+        link: /metadata_profiles/mapping_set

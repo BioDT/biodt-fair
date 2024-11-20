@@ -1,0 +1,25 @@
+title: BioDT RO-Crate Metadata Profiles Documentation
+description: RO-Crate profiles for linking the different types of digital objects that compose a digital twin, such as datasets, models and workflows
+baseurl: "/biodt-fair"
+url: "https://biodt.github.io"
+remote_theme: pages-themes/slate@v0.2.0
+
+plugins:
+    - jekyll-relative-links
+    - jekyll-remote-theme
+
+relative_links:
+    enabled: true
+    collections: true
+
+include:
+    # - CONTRIBUTING.md
+    # - README.md
+    - LICENSE.md
+    # - COPYING.md
+    # - CODE_OF_CONDUCT.md
+    # - CONTRIBUTING.md
+    # - ISSUE_TEMPLATE.md
+    # - PULL_REQUEST_TEMPLATE.md
+
+permalink: pretty

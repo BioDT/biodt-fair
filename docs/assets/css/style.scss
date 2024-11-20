@@ -1,0 +1,138 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* BioDT Color Palette */
+#header_wrap {
+    background: #414f2f !important;
+
+    a {
+        text-decoration: none !important;
+
+        &:hover {
+            text-decoration: none !important;
+        }
+
+        h1#project_title {
+            color: #fff !important;
+
+            &:hover {
+                color: #dda15e !important;
+            }
+        }
+
+        h2#project_tagline {
+            color: #fff !important;
+
+            &:hover {
+                color: #dda15e !important;
+            }
+        }
+    }
+}
+
+#main_content_wrap {
+    background: #fff !important;
+}
+
+#main_content {
+    color: #333 !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #6e3e18 !important;
+    }
+
+    a {
+        color: #bc6c25 !important;
+
+        &:hover {
+            color: #dda15e !important;
+        }
+    }
+}
+
+#footer_wrap {
+    background: #353f26 !important;
+}
+
+.inner {
+    max-width: 900px !important;
+}
+
+.copy-code-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #414f2f;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 0 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:active {
+        background-color: #dda15e;
+    }
+}
+
+pre {
+    position: relative;
+    padding-top: 38px;
+}
+
+// Custom syntax highlighting for JSON
+.language-json {
+    .highlight {
+        background: #f8f8f8;
+    }
+
+    .s2 {
+        color: #bc6c25;
+    } // Strings (green from your palette)
+    .err {
+        color: #bc6c25;
+    } // Quotes and other characters
+    .p {
+        color: #666666;
+    } // Punctuation
+    .nt {
+        color: #414f2f;
+    } // Property names
+    .mi,
+    .nl {
+        color: #6e3e18;
+    } // Numbers and literals
+    .kc {
+        color: #6e3e18;
+    } // Constants (true, false, null)
+    .w {
+        color: #bbbbbb;
+    } // Whitespace
+}
+
+// Make code blocks background lighter
+pre.highlight {
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    padding: 38px 10px 10px 10px;
+}
+
+code {
+    background: #f8f8f8;
+    padding: 3px 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "biodt-fair"
+version = "0.1.0"
+description = "Examples, resources, and other materials related to FAIR in BioDT."
+authors = ["Julian Lopez Gordillo <julian.lopezgordillo@naturalis.nl>"]
+license = "EUPL-1.2"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rocrate = "^0.11.0"
+roc-validator = "^0.4.6"
+deims = "^4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

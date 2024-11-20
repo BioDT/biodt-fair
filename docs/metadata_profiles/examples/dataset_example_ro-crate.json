@@ -1,0 +1,141 @@
+{
+    "@context": ["https://w3id.org/ro/crate/1.1/context"],
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "identifier": "https://doi.org/10.23728/b2share.57315b8581cf45f6a5686b8ec1e0a788",
+            "name": "Grassland Dynamics - Schrankogel (Austria) - 1994, 2004, 2014",
+            "description": "Species cover according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf (p 38);%;1x1m plots arranged in transects at southern slopes of Mt. Schrankogel: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.15290;visual estimate\n\nused for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "conformsTo": "https://biodt.github.io/biodt-fair/metadata_profiles/dataset",
+            "license": {
+                "@id": "http://hdl.handle.net/11304/8f7cb540-9eed-4298-b227-f3317a8a6e16"
+            },
+            "dateCreated": "2024-02-20",
+            "creator": {
+                "@id": "https://orcid.org/0000-0002-0655-3699"
+            },
+            "keywords": ["BioDT", "Grassland pDT"],
+            "url": "https://doi.org/10.23728/b2share.57315b8581cf45f6a5686b8ec1e0a788",
+            "variableMeasured": "Species cover",
+            "measurementTechnique": {
+                "@id": "http://hdl.handle.net/11304/8f7cb540-9eed-4298-b227-f3317a8a6e16"
+            },
+            "spatialCoverage": {
+                "@id": "https://deims.org/6ae2f712-9924-4d9c-b7e1-3ddffb30b8f1"
+            },
+            "temporalCoverage": ["1994", "2004", "2014"],
+            "contentSize": "3.9 MB",
+            "version": "1",
+            "publisher": {
+                "@id": "https://ror.org/039kwqk96"
+            },
+            "hasPart": [
+                {
+                    "@id": "http://hdl.handle.net/11304/ed009f64-8cd2-4b5c-a9d4-6c3f7ee35110"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/8f7cb540-9eed-4298-b227-f3317a8a6e16"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/1ed9e403-6be6-4011-aa62-032641f40cf8"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/f3c2bc8d-fd70-4d90-bd7f-0875312d27d0"
+                },
+                {
+                    "@id": "http://hdl.handle.net/11304/1691a59c-f8e8-4b28-ac76-fa90cf2bb5d8"
+                }
+            ]
+        },
+        {
+            "@id": "https://deims.org/6ae2f712-9924-4d9c-b7e1-3ddffb30b8f1",
+            "@type": "Place",
+            "name": "GLORIA Master Site Schrankogel (AT-SCH), Stubaier Alpen - Austria",
+            "description": "GLORIA Master Site.The 3497m-peak Mount Schrankogel belongs to the highest mountains of the Austrian Alps. Its northern and eastern side is surrounded by glaciers and glacier forelands. Its southern to western faces, however, are not interrupted by glacier Established in 1994 as the first comprehensive alpine to nival long-term monitoring site for high-altitude vegetation in the Alps, with ca. 1000 permanent plots of 1x1m arranged in transects of 30x3m or smaller ranging from 2900m to 3450m. Main purpose is ecological climate impact research. In 2001 it became a master site of the GLORIA network: e.g. method development and testing for species recording in 1x1m plots for GLORIA was partly conducted on Schrankogel. The first major resurvey of plots was made in 2004, the second resurvey was conducted in 2014. Besides long-term monitoring, several other research approaches were/are carried out at the Schrankogel site, such as species and vegetation modeling, vegetation mapping, phenological studies of alpine and nival plants, exclosure studies for grazing impacts at the lower altitudes of the site, soil studies, snow pattern studies (two permanent snow cameras), surface and soil-temperature measurements. In 2014, the the scope was extended to other organism groups such as soil microbiota, soil mesofauna (Oribatida and Collembola in particular), and surface-dwelling arthropods. Site setup, resurveys, or other activities were/are supported by: the Austrian Academy of Sciences through a national grant of the International Geosphere–Biosphere and the UNESCO MaB Programmes, by the Austrian and through the Institute of Mountain Research (IGF) of the Academy; by the Austrian Federal Ministry of Science and Research; the Austrian Federal Ministry of Agriculture, Forestry, Environment and Water Management; the Swiss MAVA Foundation; the Government of Tyrol; the project ALARM (Assessing Large-Scale Risks for Biodiversity with Tested Methods; No. GOCE-CT-2003-506675) in the FP-6 of the EU; the Austrian Climate Research Programme (ACRP: GZ B368633 ACRP6 - SCHRANKOGEL_20YEARS - KR13AC6K11076). For further details on Schrankogel_GLORIA see: http://www.gloria.ac.at/?a=42&b=56",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "47.041162",
+                "longitude": "11.098057",
+                "polygon": "11.098595 47.044335, 11.105804 47.043341, 11.108294 47.040182, 11.089754 47.035971, 11.091986 47.041118, 11.098595 47.044335",
+                "name": "Latitude: 47.041162 Longitude: 11.098057"
+            }
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/ed009f64-8cd2-4b5c-a9d4-6c3f7ee35110",
+            "@type": "File",
+            "name": "AT_Schrankogel_data_cover.csv",
+            "description": "Species cover data and related variables as comma-separated values",
+            "contentSize": "3.80 MB",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/1ed9e403-6be6-4011-aa62-032641f40cf8",
+            "@type": "File",
+            "name": "AT_Schrankogel_method.csv",
+            "description": "species cover according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf (p 38)",
+            "contentSize": "349 B",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/f3c2bc8d-fd70-4d90-bd7f-0875312d27d0",
+            "@type": "File",
+            "name": "AT_Schrankogel_reference.csv",
+            "description": "List of taxa used for the species cover",
+            "about": { "@id": "http://hdl.handle.net/11304/ed009f64-8cd2-4b5c-a9d4-6c3f7ee35110" },
+            "contentSize": "9.33 KB",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/1691a59c-f8e8-4b28-ac76-fa90cf2bb5d8",
+            "@type": "File",
+            "name": "AT_Schrankogel_station.csv",
+            "description": "Details about the station where the data was collected",
+            "about": { "@id": "http://hdl.handle.net/11304/ed009f64-8cd2-4b5c-a9d4-6c3f7ee35110" },
+            "contentSize": "227.19 KB",
+            "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-0655-3699",
+            "@type": "Person",
+            "name": "Christoph Wohner",
+            "affiliation": [
+                {
+                    "@id": "https://ror.org/039kwqk96"
+                },
+                {
+                    "@id": "https://ror.org/013vyke20"
+                }
+            ]
+        },
+        {
+            "@id": "https://ror.org/039kwqk96",
+            "@type": "Organisation",
+            "name": "Long Term Ecological Research Network",
+            "url": "https://lternet.edu/"
+        },
+        {
+            "@id": "https://ror.org/013vyke20",
+            "@type": "Organisation",
+            "name": "Environment Agency Austria",
+            "url": "http://www.umweltbundesamt.at/en/"
+        },
+        {
+            "@id": "http://hdl.handle.net/11304/8f7cb540-9eed-4298-b227-f3317a8a6e16",
+            "@type": ["File", "CreativeWork"],
+            "name": "AT_Schrankogel_license.csv",
+            "contentSize": "131 B",
+            "encodingFormat": "text/csv"
+        }
+    ]
+}
