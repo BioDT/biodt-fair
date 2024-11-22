@@ -19,10 +19,13 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a href="{{ '/' | relative_url }}">
+        <div class="header-content">
+            <a href="{{ '/' | relative_url }}" style="text-decoration: none" class="header-title">
+            <img src="{{ '/assets/images/biodt-logo-no_text.png' | relative_url }}" alt="BioDT Logo" class="header-logo">
             <h1 id="project_title">{{ site.title }}</h1>
-          </a>
-          <h2 id="project_tagline">{{ site.description }}</h2>
+            </a>
+            <h2 id="project_tagline">{{ site.description }}</h2>
+        </div>
         </header>
     </div>
 

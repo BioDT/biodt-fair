@@ -4,7 +4,7 @@ title: "BioDT RO-Crate Metadata Profiles Documentation"
 permalink: /
 ---
 
-![BioDT Logo]({{ '/assets/images/biodt-logo-colour.png' | relative_url }}){: .center-image width="600"}
+![BioDT Logo]({{ '/assets/images/biodt-logo-colour.png' | relative_url }}){: .center-image width="500"}
 
 The [Biodiversity Digital Twin (BioDT) project](about) has produced several outputs in different formats. This site provides documentation on the main [RO-Crate metadata profiles](metadata_profiles) used within the project.
 

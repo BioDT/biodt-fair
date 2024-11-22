@@ -1,10 +1,17 @@
 <div id="header_wrap" class="outer">
     <header class="inner">
-        <a href="{{ '/' | relative_url }}" style="text-decoration: none">
-            <h1 id="project_title">{{ site.title }}</h1>
-            {% if site.description %}
-            <h2 id="project_tagline">{{ site.description }}</h2>
-            {% endif %}
+        <a href="{{ '/' | relative_url }}" style="text-decoration: none" class="header-content">
+            <img
+                src="{{ '/assets/images/biodt-logo-no_text.png' | relative_url }}"
+                alt="BioDT Logo"
+                class="header-logo"
+            />
+            <div class="header-text">
+                <h1 id="project_title">{{ site.title }}</h1>
+                {% if site.description %}
+                <h2 id="project_tagline">{{ site.description }}</h2>
+                {% endif %}
+            </div>
         </a>
     </header>
 </div>

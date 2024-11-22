@@ -140,4 +140,30 @@ code {
 .center-image {
     display: block;
     margin: 20px auto;
+    box-shadow: none;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    height: 160px;
+    width: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+#project_tagline {
+    margin-top: 0; /* Adjust spacing as needed */
 }
