@@ -8,8 +8,8 @@ Central to the prototype Digital Twins (pDTs) are the computational models that 
 
 For more detailed descriptions of specific types of models, consider the following resources:
 
--   The [ODMAP protocol](https://odmap.wsl.ch/) for species distribution models (SDMs): and particularly.
--   HugginFace's [Model Cards](https://huggingface.co/docs/hub/en/model-cards) for machine learning (ML) models.
+- The [ODMAP protocol](https://odmap.wsl.ch/) for species distribution models (SDMs).
+- HugginFace's [Model Cards](https://huggingface.co/docs/hub/en/model-cards) for machine learning (ML) models.
 
 ## Model Attributes
 
@@ -19,69 +19,69 @@ Format: the name of each metadata attribute includes a link to [Schema.org](http
 
 **[codeRepository](https://schema.org/codeRepository)**
 
--   **Description:** Link to the repository or repositories where the un-compiled, human-readable code is located.
--   **Type:** [URL](https://schema.org/URL)
--   **Cardinality:** 1/many
--   **Comments:** A link to GitHub, GitLab, or similar. Preferably, the code repository should be under the [BioDT GitHub organisation](https://github.com/BioDT) so people in the project have access to it.
--   **Example:** `"codeRepository": "https://github.com/BioDT/biodt-fair"`
+- **Description:** Link to the repository or repositories where the un-compiled, human-readable code is located.
+- **Type:** [URL](https://schema.org/URL)
+- **Cardinality:** 1/many
+- **Comments:** A link to GitHub, GitLab, or similar. Preferably, the code repository should be hosted under the [BioDT GitHub organisation](https://github.com/BioDT) so people in the project have access to it. If no repository is available, the **[url](https://schema.org/url)** attribute can be specified instead.
+- **Example:** `"codeRepository": "https://github.com/BioDT/biodt-fair"`
 
 ---
 
 **[contributor](https://schema.org/contributor)**
 
--   **Description:** Additional people or organisations that contributed to developing the model, despite not having authorship.
--   **Type:**
-    -   [Organization](http://schema.org/Organization)
-    -   [Person](http://schema.org/Person)
--   **Cardinality:** 0/many
--   **Comments:** If possible, use an ORCiD (or ROR ID, for organizations), otherwise use full name in natural order.
--   **Example:** `"contributor": "https://orcid.org/0000-0003-0791-7164"`
+- **Description:** Additional people or organisations that contributed to developing the model, despite not having authorship.
+- **Type:**
+    - [Organization](http://schema.org/Organization)
+    - [Person](http://schema.org/Person)
+- **Cardinality:** 0/many
+- **Comments:** If possible, use an ORCiD (or ROR ID, for organizations), otherwise use full name in natural order.
+- **Example:** `"contributor": "https://orcid.org/0000-0003-0791-7164"`
 
 ---
 
 **[softwareVersion](https://schema.org/softwareVersion)**
 
--   **Description:** The version of the model instance.
--   **Type:** [Text](https://schema.org/Text)
--   **Cardinality:** 1/1
--   **Comments:** It is advised to follow the [semantic versioning](https://semver.org/) guidelines.
--   **Example:** `"softwareVersion": "2.0.13"`
+- **Description:** The version of the model instance.
+- **Type:** [Text](https://schema.org/Text)
+- **Cardinality:** 1/1
+- **Comments:** It is advised to follow the [semantic versioning](https://semver.org/) guidelines.
+- **Example:** `"softwareVersion": "2.0.13"`
 
 ---
 
 **[programmingLanguage](https://schema.org/programmingLanguage)**
 
--   **Description:** The computer programming language the code is written in.
--   **Type:**
-    -   [ComputerLanguage](http://schema.org/ComputerLanguage)
-    -   [Text](http://schema.org/Text)
--   **Cardinality:** 1/many
--   **Comments:**
--   **Example:** `"programmingLanguage": "Python"`
+- **Description:** The computer programming language the code is written in.
+- **Type:**
+    - [ComputerLanguage](http://schema.org/ComputerLanguage)
+    - [Text](http://schema.org/Text)
+- **Cardinality:** 1/many
+- **Comments:**
+- **Example:** `"programmingLanguage": "Python"`
 
 ---
 
 **[softwareRequirements](https://schema.org/softwareRequirements)**
 
--   **Description:** Component dependency requirements for the model.
--   **Type:**
-    -   [Text](http://schema.org/Text)
-    -   [URL](http://schema.org/URL)
--   **Cardinality:** 0/many
--   **Comments:** This includes runtime environments and shared libraries that are not included as part of the model but are required to run it.
--   **Example:** `"softwareRequirements" : "https://pypi.org/project/cwltool/"`
+- **Description:** Component dependency requirements for the model.
+- **Type:**
+    - [Text](http://schema.org/Text)
+    - [URL](http://schema.org/URL)
+- **Cardinality:** 0/many
+- **Comments:** This includes runtime environments and shared libraries that are not included as part of the model but are required to run it.
+- **Example:** `"softwareRequirements" : "https://pypi.org/project/cwltool/"`
 
 ---
 
 **[supportingData](https://schema.org/supportingData)**
 
--   **Description:** Related datasets used for the model, for example, as training or input data.
--   **Type:**
-    -   [Dataset](https://schema.org/Dataset)
-    -   [DataFeed](https://schema.org/DataFeed)
--   **Cardinality:** 1/many
--   **Comments:**
--   **Example:** `"supportingData": {"@id": "https://doi.org/10.15468/dl.b3n3r9"}`
+- **Description:** Related datasets used for the model, for example, as training or input data.
+- **Type:**
+    - [Dataset](https://schema.org/Dataset)
+    - [DataFeed](https://schema.org/DataFeed)
+- **Cardinality:** 1/many
+- **Comments:**
+- **Example:** `"supportingData": {"@id": "https://doi.org/10.15468/dl.b3n3r9"}`
 
 ---
 

@@ -34,11 +34,11 @@ The `ro-crate-metadata.json` file (also known as the _RO-Crate Metadata Document
 
 While the flexibility offered by RO-Crate is a great feature, some mechanism is needed to achieve harmonisation across different pDTs. Several metadata profiles were designed for linking and describing the different kinds of digital objects present in the project, such as the interactions between data, models and workflows to compose digital twins:
 
--   [Kernel Attributes]({{ '/metadata_profiles/kernel' | relative_url }}) cover all the general information that is common to any digital object. While they are described independently here, they don't constitute a separate profile themselves, and instead are present in all of the other profiles.
--   [Dataset]({{ '/metadata_profiles/dataset' | relative_url }}) is used to describe the data sources, either as discrete datasets or continuous data streams that keep being updated with newer data.
--   [Model]({{ '/metadata_profiles/model' | relative_url }}) is a computational representation of a problem or a process that can be executed to simulate, solve, or analyse the behaviour of a system. Typically, they depend on one or multiple datasets for an accurate representation.
--   [Workflow]({{ '/metadata_profiles/workflow' | relative_url }}) captures multi-step methods involving different tools to collect, process and analyse data, which typically result in a certain output.
--   [Mapping Set]({{ '/metadata_profiles/mapping_set' | relative_url }}) represents a set of individual mappings between certain terms, typically describing the translation between two particular semantic artefacts.
+- [Kernel Attributes]({{ '/metadata_profiles/kernel' | relative_url }}) cover all the general information that is common to any digital object. While they are described independently here, they don't constitute a separate profile themselves, and instead are present in all of the other profiles.
+- [Dataset]({{ '/metadata_profiles/dataset' | relative_url }}) is used to describe the data sources, either as discrete datasets or continuous data streams that keep being updated with newer data.
+- [Model]({{ '/metadata_profiles/model' | relative_url }}) is a computational representation of a problem or a process that can be executed to simulate, solve, or analyse the behaviour of a system. Typically, they depend on one or multiple datasets for an accurate representation.
+- [Workflow]({{ '/metadata_profiles/workflow' | relative_url }}) captures multi-step methods involving different tools to collect, process and analyse data, which typically result in a certain output.
+- [Mapping Set]({{ '/metadata_profiles/mapping_set' | relative_url }}) represents a set of individual mappings between certain terms, typically describing the translation between two particular semantic artefacts.
 
 Beyond the metadata profiles, this site is not meant to provide extensive documentation or resources related to the project. For a more general and up-to-date view on developments around FAIR and Open Science within the BioDT project, check the [`biodt-fair`](https://github.com/BioDT/biodt-fair) GitHub repo.
 
@@ -50,4 +50,4 @@ _This study has received funding from the European Union's Horizon Europe resear
 
 ### License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[European Union Public Licence v. 1.2](https://eupl.eu/1.2/en/)
