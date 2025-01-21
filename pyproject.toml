@@ -1,17 +1,27 @@
-[tool.poetry]
+[project]
 name = "biodt-fair"
-version = "0.1.0"
 description = "Examples, resources, and other materials related to FAIR in BioDT."
-authors = ["Julian Lopez Gordillo <julian.lopezgordillo@naturalis.nl>"]
-license = "EUPL-1.2"
+authors = [
+    { name = "Julian Lopez Gordillo", email = "julian.lopezgordillo@naturalis.nl" },
+]
+keywords = ["biodt", "biodiversity", "fair"]
+license = { text = "EUPL-1.2" }
 readme = "README.md"
+requires-python = ">=3.12"
+homepage = "https://biodt.eu/"
+repository = "https://github.com/BioDT/biodt-fair"
+dynamic = ["dependencies"]
+
+[tool.poetry]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
-rocrate = "^0.11.0"
-roc-validator = "^0.4.6"
+python = ">=3.12,<3.13"
+rocrate = "^0.13.0"
+roc-validator = "^0.5.0"
 deims = "^4.0"
+cwltool = "^3.1.20241112140730"
+mockseries = "^0.3.1"
 
 
 [build-system]
