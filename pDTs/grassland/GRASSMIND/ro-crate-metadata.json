@@ -1,0 +1,94 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": [
+                "Dataset",
+                "SoftwareApplication"
+            ],
+            "codeRepository": "https://github.com/BioDT/uc-grassland",
+            "conformsTo": "https://biodt.github.io/biodt-fair/metadata_profiles/model",
+            "creator": [
+                {
+                    "@id": "https://orcid.org/0000-0001-8541-789X"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-7594-8152"
+                }
+            ],
+            "dateCreated": "2024-07-10",
+            "datePublished": "2025-01-21T14:10:11+00:00",
+            "description": "GRASSMIND is an individual- and process-based grassland model designed for simulating the structure and dynamics of species-rich herbaceous communities (including management).",
+            "keywords": [
+                "BioDT",
+                "Biodiversity dynamics",
+                "Grasslands"
+            ],
+            "name": "GRASSMIND",
+            "programmingLanguage": {
+                "@id": "https://isocpp.org/"
+            },
+            "softwareVersion": "2.0.0",
+            "supportingData": [
+                "https://doi.org/10.23728/b2share.7198b4299b354a3a80be257cc3d0f87f",
+                "https://doi.org/10.23728/b2share.afc31a2e4e544b849f3431d6709826ce",
+                "https://doi.org/10.23728/b2share.628b7791e378468e9e0362459ba1be00",
+                "https://doi.org/10.23728/b2share.6d5c932698e340648789d948d74e1fc7",
+                "https://doi.org/10.23728/b2share.0399dacfd4f0452b9e8288d5bb3890a6",
+                "https://doi.org/10.23728/b2share.7736509ddf214e2aa6352dce84c41038",
+                "https://doi.org/10.23728/b2share.617552f84d28449bbb5aafb312dc8120",
+                "https://doi.org/10.23728/b2share.0e5405ed131541799211f696763a71c1",
+                "https://doi.org/10.23728/b2share.6a61d73a3f504abbb00684c709f30cb1",
+                "https://doi.org/10.23728/b2share.248a714052f743e4969ac7f23412fcb4",
+                "https://doi.org/10.23728/b2share.e0407b14872548fbb401605d492b1ac5",
+                "https://doi.org/10.23728/b2share.d20e8129504c4971adb4cbc895ca2d2e",
+                "https://doi.org/10.23728/b2share.7d674e57c5b34bd0bb43375773cf9a63",
+                "https://doi.org/10.23728/b2share.6d43bd5ac35945a6ae749dc16cafb9ef",
+                "https://doi.org/10.23728/b2share.09d5592f9545489aa01b3b2e051b0666"
+            ],
+            "url": "https://www.ufz.de/index.php?en=48445"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "https://isocpp.org/",
+            "@type": "ComputerLanguage",
+            "description": "C++ is a high-level, general-purpose programming language. C++ has object-oriented, generic, and functional features, in addition to facilities for low-level memory manipulation for systems like microcomputers.",
+            "name": "C++",
+            "version": "C++23"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-8541-789X",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/000h6jb29"
+            },
+            "family_name": "Banitz",
+            "given_name": "Thomas"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7594-8152",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/000h6jb29"
+            },
+            "family_name": "Taubert",
+            "given_name": "Franziska"
+        },
+        {
+            "@id": "https://ror.org/000h6jb29",
+            "@type": "Organization",
+            "name": "Helmholtz Centre for Environmental Research",
+            "url": "https://www.ufz.de/"
+        }
+    ]
+}

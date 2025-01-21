@@ -4,21 +4,24 @@
         {
             "@id": "./",
             "@type": "Dataset",
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
             "creator": [
                 {
-                    "@id": "#Lischeid, Gunnar"
+                    "@id": "#GunnarLischeid"
                 },
                 {
-                    "@id": "#Meier, Kristin"
+                    "@id": "#KristinMeier"
                 },
                 {
-                    "@id": "#Grahmann, Kathrin"
+                    "@id": "#KathrinGrahmann"
                 }
             ],
             "dateCreated": [
                 "2024-10-08T06:56:51.896843+00:00"
             ],
-            "datePublished": "2024-11-20T10:55:42+00:00",
+            "datePublished": "2025-01-21T14:10:11+00:00",
             "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
             "hasPart": [
                 {
@@ -66,29 +69,27 @@
             }
         },
         {
-            "@id": "#Lischeid, Gunnar",
+            "@id": "#GunnarLischeid",
             "@type": "Person",
-            "creator_name": "Lischeid, Gunnar",
             "family_name": "Lischeid",
             "given_name": "Gunnar"
         },
         {
-            "@id": "#Meier, Kristin",
+            "@id": "#KristinMeier",
             "@type": "Person",
-            "creator_name": "Meier, Kristin",
             "family_name": "Meier",
             "given_name": "Kristin"
         },
         {
-            "@id": "#Grahmann, Kathrin",
+            "@id": "#KathrinGrahmann",
             "@type": "Person",
-            "creator_name": "Grahmann, Kathrin",
             "family_name": "Grahmann",
             "given_name": "Kathrin"
         },
         {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },

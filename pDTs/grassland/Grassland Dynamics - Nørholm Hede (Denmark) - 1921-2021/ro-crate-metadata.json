@@ -4,18 +4,21 @@
         {
             "@id": "./",
             "@type": "Dataset",
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
             "creator": [
                 {
-                    "@id": "#Kappel Schmidt, Inger"
+                    "@id": "#IngerKappelSchmidt"
                 },
                 {
-                    "@id": "#Kepfer Rojas, Sebastian"
+                    "@id": "#SebastianKepferRojas"
                 }
             ],
             "dateCreated": [
                 "2024-10-16T09:05:34.846696+00:00"
             ],
-            "datePublished": "2024-11-20T10:55:42+00:00",
+            "datePublished": "2025-01-21T14:10:10+00:00",
             "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here:\nhttps://doi.org/10.23728/b2share.d4037ff5a1fe4a20b28ead7010cf74ba",
             "hasPart": [
                 {
@@ -63,22 +66,21 @@
             }
         },
         {
-            "@id": "#Kappel Schmidt, Inger",
+            "@id": "#IngerKappelSchmidt",
             "@type": "Person",
-            "creator_name": "Kappel Schmidt, Inger",
             "family_name": "Kappel Schmidt",
             "given_name": "Inger"
         },
         {
-            "@id": "#Kepfer Rojas, Sebastian",
+            "@id": "#SebastianKepferRojas",
             "@type": "Person",
-            "creator_name": "Kepfer Rojas, Sebastian",
             "family_name": "Kepfer Rojas",
             "given_name": "Sebastian"
         },
         {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },

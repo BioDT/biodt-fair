@@ -4,36 +4,35 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "author": [
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
+            "creator": [
                 {
-                    "creator_name": "Fontana, Veronika",
-                    "family_name": "Fontana",
-                    "given_name": "Veronika"
+                    "@id": "#VeronikaFontana"
                 },
                 {
-                    "creator_name": "Crepaz, Harald",
-                    "family_name": "Crepaz",
-                    "given_name": "Harald"
+                    "@id": "#HaraldCrepaz"
                 }
             ],
             "dateCreated": [
-                "2024-07-03T10:53:22.544169+00:00"
+                "2024-11-13T12:59:25.805729+00:00"
             ],
-            "datePublished": "2024-08-12T09:45:02+00:00",
-            "description": "Vegetation Abundance data as\nused for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "datePublished": "2025-01-21T14:10:10+00:00",
+            "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
             "hasPart": [
                 {
-                    "@id": "http://hdl.handle.net/11304/34524a96-0186-496b-803f-9a47ba797159"
+                    "@id": "http://hdl.handle.net/11304/6dc824fe-b399-4a14-b3cd-dc7cf6160e74"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/adcb2b8f-399a-4260-b35c-dbd64fc59343"
+                    "@id": "http://hdl.handle.net/11304/5aaf6136-e31e-4c35-bbaf-f0544b7b08d8"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/39fa9a0c-6171-4972-b9b2-fec290d59dd7"
+                    "@id": "http://hdl.handle.net/11304/69c80354-cb92-4f1f-b718-30885927d8dd"
                 }
             ],
             "identifier": [
-                "https://doi.org/10.23728/b2share.db90a22af6524a93988b17999fdfffce"
+                "https://doi.org/10.23728/b2share.617552f84d28449bbb5aafb312dc8120"
             ],
             "keywords": [
                 "BioDT",
@@ -70,8 +69,21 @@
             }
         },
         {
+            "@id": "#VeronikaFontana",
+            "@type": "Person",
+            "family_name": "Fontana",
+            "given_name": "Veronika"
+        },
+        {
+            "@id": "#HaraldCrepaz",
+            "@type": "Person",
+            "family_name": "Crepaz",
+            "given_name": "Harald"
+        },
+        {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },
@@ -80,6 +92,7 @@
             "@type": "Place",
             "description": "The first data in the Matsch| Mazia valley was collected in the year 2008.  Originally  aimed  at studying  climatic change impacts on dry mountain grassland, the measuring activities have been strongly  expanded  throughout  the  years.    Today's activities on the site include process-oriented  ecological  research covering time (historical analysis, actual processes and future scenarios ) and space (from plot to landscape scale among different ecosystems) within a human-influenced catchment.  \r\nThe  valley  is  situated  in  the  central  Alps  in the westernmost part of South Tyrol in North Italy. Matsch is a side valley of the Vinschgau valley, and extends over 90 km2 reaching  from  950 m.a.s.l.  to  3700 m.a.sl.  at  the highest peak. The main village Matsch is located at 1600 m and has 458 inhabitants.Due to its protected location in the central Alps, the Mazia/Matsch valley represents one of the driest spots within the whole alpine range, with a mean annual precipitation of 525mm at 1500m.a.s.l  (1950-2010) \r\n\r\n\r\n\r\n \r\n",
             "geo": {
+                "@id": "https://deims.org/11696de6-0ab9-4c94-a06b-7ce40f56c964",
                 "@type": "GeoCoordinates",
                 "lat": "46.6928",
                 "lon": "10.6157"
@@ -87,19 +100,19 @@
             "name": "IT25 - Val Mazia/Matschertal"
         },
         {
-            "@id": "http://hdl.handle.net/11304/34524a96-0186-496b-803f-9a47ba797159",
+            "@id": "http://hdl.handle.net/11304/6dc824fe-b399-4a14-b3cd-dc7cf6160e74",
             "@type": "File",
             "contentSize": "948943",
             "name": "IT_Matschertal_data_abund.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/adcb2b8f-399a-4260-b35c-dbd64fc59343",
+            "@id": "http://hdl.handle.net/11304/5aaf6136-e31e-4c35-bbaf-f0544b7b08d8",
             "@type": "File",
             "contentSize": "89",
             "name": "IT_Matschertal_reference.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/39fa9a0c-6171-4972-b9b2-fec290d59dd7",
+            "@id": "http://hdl.handle.net/11304/69c80354-cb92-4f1f-b718-30885927d8dd",
             "@type": "File",
             "contentSize": "623826",
             "name": "IT_Matschertal_station.csv"

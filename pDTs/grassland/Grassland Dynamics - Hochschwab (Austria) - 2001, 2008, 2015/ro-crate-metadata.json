@@ -4,17 +4,18 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "author": [
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
+            "creator": [
                 {
-                    "creator_name": "Pauli, Harald",
-                    "family_name": "Pauli",
-                    "given_name": "Harald"
+                    "@id": "#HaraldPauli"
                 }
             ],
             "dateCreated": [
                 "2024-04-30T09:47:32.020656+00:00"
             ],
-            "datePublished": "2024-08-12T09:45:02+00:00",
+            "datePublished": "2025-01-21T14:10:11+00:00",
             "description": "species cover according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf (p 38);\non each of four summits, the four 1x1m corner plots of a 3x3m grid in each cardinal direction 5m below the highest summit point (GLORIA Field Manual, p 31) at Hochschwab (Austria)\n\nabundance according to the GLORIA Field Manual: https://gloria.ac.at/downloads/Manual_5thEd_ENG.pdf: \n1=very rare, 2=rare, 3=rare-scattered, 4=scattered, 5=scattered-common, 6=common, 7=common-dominant, 8=dominant (cf. p 41f.)\ndimless;each of four summits is divided in 4 summit area sections from 0-5 m below the highest summit point and from 5-10 m below the highest summit point (GLORIA Field Manual, p 34) at Hochschwab (Austria)",
             "hasPart": [
                 {
@@ -83,8 +84,15 @@
             }
         },
         {
+            "@id": "#HaraldPauli",
+            "@type": "Person",
+            "family_name": "Pauli",
+            "given_name": "Harald"
+        },
+        {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },
@@ -93,6 +101,7 @@
             "@type": "Place",
             "description": "GLORIA Target region\r\n\r\nThe site lies in the alpine zone of Hochschwab in the NE-Alps. It is defined as a standard Target region of the GLORIA network (www.gloria.ac.at). Hochschwab_GLORIA was the networks first test site for standardised monitoring of alpine summit vegetation established in 1998. Regular monitoring started in 2001 as part of the EU-FP-5 project GLORIA-Europe. All permanenent plots were resurveyed in 2008 and in 2015. The site consists of 4 separate summit sites arranged along the elevation gradient between 1910 and 2255m. The main scientific purpose is to detect impacts of climate change on alpine vegetation and its biodiversity. \r\nIn addition, downslope transects to the treeline ecotone were established in 2008, diversity of soil nematodes were studied at the GLORIA summit areas and the region was part of an assessment of useful plants of the alpine life zone.\r\nFor the sampling design and recording methods see the GLORIA Field manual and update documents downloadable under: http://www.gloria.ac.at/?a=20",
             "geo": {
+                "@id": "https://deims.org/4ac03ec3-39d9-4ca1-a925-b6c1ae80c90d",
                 "@type": "GeoCoordinates",
                 "lat": "47.62202",
                 "lon": "15.149292"

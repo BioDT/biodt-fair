@@ -4,15 +4,18 @@
         {
             "@id": "./",
             "@type": "Dataset",
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
             "creator": [
                 {
-                    "@id": "#Melecis, Viesturs"
+                    "@id": "#ViestursMelecis"
                 }
             ],
             "dateCreated": [
                 "2024-10-08T13:41:23.527022+00:00"
             ],
-            "datePublished": "2024-11-20T10:55:42+00:00",
+            "datePublished": "2025-01-21T14:10:10+00:00",
             "description": "Vegetation Abundance data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).\n\nThis dataset has been derived from data provided here: https://doi.org/10.23728/b2share.7e7e553d85f44735b59b313a12745170",
             "hasPart": [
                 {
@@ -60,15 +63,15 @@
             }
         },
         {
-            "@id": "#Melecis, Viesturs",
+            "@id": "#ViestursMelecis",
             "@type": "Person",
-            "creator_name": "Melecis, Viesturs",
             "family_name": "Melecis",
             "given_name": "Viesturs"
         },
         {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },

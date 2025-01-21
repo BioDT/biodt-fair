@@ -4,47 +4,44 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "author": [
+            "conformsTo": [
+                "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"
+            ],
+            "creator": [
                 {
-                    "creator_name": "Mony, Cendrine",
-                    "family_name": "Mony",
-                    "given_name": "Cendrine"
+                    "@id": "#CendrineMony"
                 },
                 {
-                    "creator_name": "Houet, Thomas",
-                    "family_name": "Houet",
-                    "given_name": "Thomas"
+                    "@id": "#ThomasHouet"
                 },
                 {
-                    "creator_name": "Alignier, Audrey",
-                    "family_name": "Alignier",
-                    "given_name": "Audrey"
+                    "@id": "#AudreyAlignier"
                 }
             ],
             "dateCreated": [
-                "2024-07-03T11:09:18.462700+00:00"
+                "2024-11-14T10:09:51.546751+00:00"
             ],
-            "datePublished": "2024-08-12T09:45:02+00:00",
-            "description": "Vegetation cover data as\nused for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
+            "datePublished": "2025-01-21T14:10:10+00:00",
+            "description": "Vegetation cover data as used for the Horizon Europe project \"Biodiversity Digital Twin for Advanced Modelling, Simulation and Prediction Capabilities\" (https://biodt.eu/).",
             "hasPart": [
                 {
-                    "@id": "http://hdl.handle.net/11304/d54190ac-0615-497a-935f-3acb199c77a6"
+                    "@id": "http://hdl.handle.net/11304/c2994ebe-908a-464f-a895-24ce11043497"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/7c5662ea-5f0f-4f41-a881-db2af1c0d7b4"
+                    "@id": "http://hdl.handle.net/11304/eabe3734-1f24-4c7d-ac69-f63d74053377"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/20f3b1cb-2fdf-4727-9ee3-301b517b9175"
+                    "@id": "http://hdl.handle.net/11304/9ad7b217-35f2-48f7-a429-cc6511e011db"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/a3bdd4e3-e234-4887-8bc2-0f4645875311"
+                    "@id": "http://hdl.handle.net/11304/8d3c36af-edba-41fb-96b1-ae54ff2ee886"
                 },
                 {
-                    "@id": "http://hdl.handle.net/11304/7330515c-6a57-4d8a-97ab-8097745535da"
+                    "@id": "http://hdl.handle.net/11304/c3e0bec3-56a4-4c43-8e0a-e7b6d184485c"
                 }
             ],
             "identifier": [
-                "https://doi.org/10.23728/b2share.a92f5322bc83447b881f456ba51fdb4c"
+                "https://doi.org/10.23728/b2share.0399dacfd4f0452b9e8288d5bb3890a6"
             ],
             "keywords": [
                 "BioDT",
@@ -81,16 +78,36 @@
             }
         },
         {
+            "@id": "#CendrineMony",
+            "@type": "Person",
+            "family_name": "Mony",
+            "given_name": "Cendrine"
+        },
+        {
+            "@id": "#ThomasHouet",
+            "@type": "Person",
+            "family_name": "Houet",
+            "given_name": "Thomas"
+        },
+        {
+            "@id": "#AudreyAlignier",
+            "@type": "Person",
+            "family_name": "Alignier",
+            "given_name": "Audrey"
+        },
+        {
             "@id": "https://elter-ri.eu/",
             "@type": "Organization",
+            "description": "Integrated European Long-Term Ecosystem, critical zone and socio-ecological Research",
             "name": "eLTER",
             "url": "https://elter-ri.eu/"
         },
         {
             "@id": "https://deims.org/31e67a47-5f15-40ad-9a72-f6f0ee4ecff6",
             "@type": "Place",
-            "description": "The LTSER Zone Atelier Armorique belongs to LTER-France network and is located in nord westen France. The ZA Armorique conducts an interdisciplinary exploration of landscapes from urban areas to rural countryside, integrating social and environmental dynamics.",
+            "description": "The LTSER Zone Atelier Armorique belongs to LTER-France network and is located in Brittany, north-western France. The ZA Armorique conducts an interdisciplinary exploration of landscapes from urban areas to rural countryside, integrating social and environmental dynamics.",
             "geo": {
+                "@id": "https://deims.org/31e67a47-5f15-40ad-9a72-f6f0ee4ecff6",
                 "@type": "GeoCoordinates",
                 "lat": "48.6",
                 "lon": "-1.53333"
@@ -98,31 +115,31 @@
             "name": "LTSER Zone Atelier Armorique"
         },
         {
-            "@id": "http://hdl.handle.net/11304/d54190ac-0615-497a-935f-3acb199c77a6",
+            "@id": "http://hdl.handle.net/11304/c2994ebe-908a-464f-a895-24ce11043497",
             "@type": "File",
-            "contentSize": "144183",
+            "contentSize": "140655",
             "name": "FR_AtelierArmorique_data_cover.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/7c5662ea-5f0f-4f41-a881-db2af1c0d7b4",
+            "@id": "http://hdl.handle.net/11304/eabe3734-1f24-4c7d-ac69-f63d74053377",
             "@type": "File",
             "contentSize": "7925",
             "name": "FR_AtelierArmorique_data_indices.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/20f3b1cb-2fdf-4727-9ee3-301b517b9175",
+            "@id": "http://hdl.handle.net/11304/9ad7b217-35f2-48f7-a429-cc6511e011db",
             "@type": "File",
             "contentSize": "1344",
             "name": "FR_AtelierArmorique_method.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/a3bdd4e3-e234-4887-8bc2-0f4645875311",
+            "@id": "http://hdl.handle.net/11304/8d3c36af-edba-41fb-96b1-ae54ff2ee886",
             "@type": "File",
             "contentSize": "10796",
             "name": "FR_AtelierArmorique_reference.csv"
         },
         {
-            "@id": "http://hdl.handle.net/11304/7330515c-6a57-4d8a-97ab-8097745535da",
+            "@id": "http://hdl.handle.net/11304/c3e0bec3-56a4-4c43-8e0a-e7b6d184485c",
             "@type": "File",
             "contentSize": "2792",
             "name": "FR_AtelierArmorique_station.csv"
