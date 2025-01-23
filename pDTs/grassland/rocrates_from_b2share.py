@@ -108,7 +108,7 @@ root_dataset = model_crate.add(RootDataset(model_crate, properties={
     "description": "GRASSMIND is an individual- and process-based grassland model designed for simulating the structure and dynamics of species-rich herbaceous communities (including management).",
     "dateCreated": "2024-07-10",
     "keywords": ["BioDT", "Biodiversity dynamics", "Grasslands"],
-    # "license": {"@id": "tbd"}, # FIXME: What license will the code adhere to? E.g. EUPL-1.2
+    "license": {"@id": "https://eupl.eu/"},
     "codeRepository": "https://github.com/BioDT/uc-grassland", # FIXME: Currently a private repo. Shouldn't it be made public?
     # "contributor": [],
     "softwareVersion": "2.0.0",
