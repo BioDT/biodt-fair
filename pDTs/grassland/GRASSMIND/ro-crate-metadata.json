@@ -25,6 +25,7 @@
                 "Biodiversity dynamics",
                 "Grasslands"
             ],
+            "license": {"@id": "https://eupl.eu/"},
             "name": "GRASSMIND",
             "programmingLanguage": {
                 "@id": "https://isocpp.org/"
