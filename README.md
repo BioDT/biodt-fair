@@ -21,6 +21,11 @@ Publications & Presentations: Available in our Zenodo community
 Official Deliverables: Project milestones and deliverables will be available as they become available afer the formal approval of the EU. 
 
 
+![BioDT FAIR Principles Diagram](images/BioDT_Deliverable_Milestones_2022-2025.png)
+
+Image Created for the BioDT project by [@juliancervos](https://github.com/juliancervos)
+
+
 ## Content
 
 The information on this repository is distributed as follows:
