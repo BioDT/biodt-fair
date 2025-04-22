@@ -21,9 +21,9 @@ Publications & Presentations: Available in our Zenodo community
 Official Deliverables: Project milestones and deliverables will be available as they become available afer the formal approval of the EU. 
 
 
-![BioDT FAIR Principles Diagram](images/BioDT_Deliverable_Milestones_2022-2025.png)
+![BioDT FAIR Deliverables and Milestones](images/BioDT_Deliverable_Milestones_2022-2025.png)
 
-Image Created for the BioDT project by [@juliancervos](https://github.com/juliancervos)
+Image created for the BioDT project by [@juliancervos](https://github.com/juliancervos)
 
 
 ## Content
@@ -66,6 +66,12 @@ This repo contains mostly JSON metadata files and isolated Python scripts taken 
 # RO-Crate 
 
 The RO-Crate framework has been adopted in the BioDT project to build FAIR Digital Twins and to address the challenges of packaging and describing different digital objects in a machine-actionable and interoperable way. We have created profiles (https://biodt.github.io/biodt-fair/metadata_profiles) which consists of a number of metadata attributes, have been designed to strike a balance between providing enough details about the digital object they are describing, but remaining as minimal as possible. While most of the attributes come from Schema.org (the standard vocabulary that RO-Crate relies on), other initiatives and community standards have been taken into consideration for the attribute selection. The metadata structure provides detailed provenance, including authorship, licensing, and also more type-specific information, such as spatial and temporal coverage (in the case of datasets) or software version and requirements (for models). Each component, such as vegetation cover data and methodological documentation, is uniquely identified using persistent identifiers.
+
+
+![Example RO-Crate Profiles](images/BioDT_metadata_profiles_2025.png)
+
+Image created for the BioDT project by [@juliancervos](https://github.com/juliancervos)
+
 
 
 ## License
