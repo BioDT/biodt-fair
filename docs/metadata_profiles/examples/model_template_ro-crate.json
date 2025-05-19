@@ -22,33 +22,7 @@
             "softwareVersion": "0.1.",
             "programmingLanguage": "",
             "softwareRequirements": ["", "", ""],
-            "supportingData": [{ "@id": "" }]
-        },
-        {
-            "@id": "",
-            "@type": "DataFeed",
-            "name": "",
-            "description": "",
-            "variableMeasured": "",
-            "measurementTechnique": "",
-            "spatialCoverage": { "@id": "" },
-            "temporalCoverage": "",
-            "encodingFormat": "",
-            "contentSize": "",
-            "version": "",
-            "publisher": ""
-        },
-        {
-            "@id": "",
-            "@type": "Place",
-            "name": "",
-            "description": "",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "",
-                "longitude": "",
-                "name": ""
-            }
+            "supportingData": ["", ""]
         },
         {
             "@id": "",
