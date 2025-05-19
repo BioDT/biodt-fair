@@ -14,99 +14,101 @@ Format: the name of each metadata attribute includes a link to [Schema.org](http
 
 **[conformsTo](http://purl.org/dc/terms/conformsTo)**
 
--   **Description:** The profile that a certain metadata description follows.
--   **Type:** [URL](https://schema.org/URL)
--   **Cardinality:** 1/1
--   **Comments:** For now, we can refer to these documentation pages for the profiles.
--   **Example:** `"conformsTo": "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"`
+- **Description:** The profile that a certain metadata description follows.
+- **Type:** [URL](https://schema.org/URL)
+- **Cardinality:** 1/1
+- **Comments:** For now, we can refer to these documentation pages for the profiles.
+- **Example:** `"conformsTo": "https://biodt.github.io/biodt-fair/metadata_profiles/dataset"`
 
 ---
 
 **[license](http://schema.org/license)**
 
--   **Description:** License for the FDO the metadata description is about.
--   **Type:** [URL](https://schema.org/URL)
--   **Cardinality:** 1/1
--   **Comments:** The FDO might have a certain license, however, the metadata file should have a CC0 license.
--   **Example:** `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
+- **Description:** License for the FDO the metadata description is about.
+- **Type:** [URL](https://schema.org/URL)
+- **Cardinality:** 1/1
+- **Comments:** The FDO might have a certain license, however, the metadata file should have a CC0 license.
+- **Example:** `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
 
 ---
 
 **[@id](https://www.w3.org/TR/json-ld/#node-identifiers) / [identifier](https://schema.org/identifier)**
 
--   **Description:** An identifier for the FDO. Ideally, a globally unique, persistent and resolvable identifier.
--   **Type:** [IRI](https://datatracker.ietf.org/doc/html/rfc3987#section-2)
--   **Cardinality:** 1/1
--   **Comments:** As an alternative for `"@id"` (for example, for other serialisations), [`"identifier"`](http://schema.org/identifier) can be used in addition to it in order to specify a PID.
--   **Example:** `"@id": "https://doi.org/10.1111/1365-2664.12222"`
+- **Description:** An identifier for the FDO. Ideally, a globally unique, persistent and resolvable identifier.
+- **Type:** [IRI](https://datatracker.ietf.org/doc/html/rfc3987#section-2)
+- **Cardinality:** 1/1
+- **Comments:** As an alternative for `"@id"` (for example, for other serialisations), [`"identifier"`](http://schema.org/identifier) can be used in addition to it in order to specify a PID.
+- **Example:** `"@id": "https://doi.org/10.1111/1365-2664.12222"`
 
 ---
 
 **[@type](https://www.w3.org/TR/json-ld/#specifying-the-type) / [additionalType](https://schema.org/additionalType)**
 
--   **Description:** The nature of the object the metadata describes. In BioDT, we currently consider [Dataset](https://schema.org/Dataset), [SoftwareApplication](https://schema.org/SoftwareApplication) (for computational models), [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow) and [MappingSet](https://mapping-commons.github.io/sssom/MappingSet/).
--   **Type:** [Text](https://schema.org/Text)
--   **Cardinality:** 1/many
--   **Comments:** `"@type"` is a reserved term in JSON-LD and there are certain restrictions to its usage. Here, apart from complying with JSON-LD and RO-Crate, we use that attribute to determine the digital object type. `additionalType` might be used for that purpose.
--   **Example:** `"@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"]`
+- **Description:** The nature of the object the metadata describes. In BioDT, we currently consider [Dataset](https://schema.org/Dataset), [SoftwareApplication](https://schema.org/SoftwareApplication) (for computational models), [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow) and [MappingSet](https://mapping-commons.github.io/sssom/MappingSet/).
+- **Type:** [Text](https://schema.org/Text)
+- **Cardinality:** 1/many
+- **Comments:** `"@type"` is a reserved term in JSON-LD and there are certain restrictions to its usage. Here, apart from complying with JSON-LD and RO-Crate, we use that attribute to determine the digital object type. `additionalType` might be used for that purpose.
+- **Example:** `"@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"]`
 
 ---
 
 **[name](https://schema.org/name)**
 
--   **Description:** Name of the FDO.
--   **Type:** [Text](https://schema.org/Text)
--   **Cardinality:** 1/1
--   **Comments:**
--   **Example:** `"name": "BEEHAVE model"`
+- **Description:** Name of the FDO.
+- **Type:** [Text](https://schema.org/Text)
+- **Cardinality:** 1/1
+- **Comments:**
+- **Example:** `"name": "BEEHAVE model"`
 
 ---
 
 **[description](http://schema.org/description)**
 
--   **Description:** Short description of what the FDO is.
--   **Type:** [Text](https://schema.org/Text)
--   **Cardinality:** 1/1
--   **Comments:**
--   **Example:** `"description": "BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different..."`
+- **Description:** Short description of what the FDO is.
+- **Type:** [Text](https://schema.org/Text)
+- **Cardinality:** 1/1
+- **Comments:**
+- **Example:** `"description": "BEEHAVE is a computer model to simulate the development of a honeybee colony and its nectar and pollen foraging behavior in different..."`
 
 ---
 
 **[dateCreated](http://schema.org/dateCreated)**
 
--   **Description:** The date on which the FDO was created or the item was added to a DataFeed.
--   **Type:**
-    -   [Date](http://schema.org/Date)
-    -   [DateTime](http://schema.org/DateTime)
--   **Cardinality:** 1/1
--   **Comments:** `"datePublished"` and `"dateModified"` can also be included to add further details.
--   **Example:** `"dateCreated": "2020-04-07 13:16:09 UTC"`
+- **Description:** The date on which the FDO was created or the item was added to a DataFeed.
+- **Type:**
+    - [Date](http://schema.org/Date)
+    - [DateTime](http://schema.org/DateTime)
+- **Cardinality:** 1/1
+- **Comments:** `"datePublished"` and `"dateModified"` can also be included to add further details.
+- **Example:** `"dateCreated": "2020-04-07 13:16:09 UTC"`
 
 ---
 
 **[creator](http://schema.org/creator)**
 
--   **Description:** Creator of the FDO.
--   **Type:**
-    -   [Organization](http://schema.org/Organization)
-    -   [Person](http://schema.org/Person)
--   **Cardinality:** 1/many
--   **Comments:** If possible, use an ORCiD or ROR ID, otherwise use full name in natural order. Closely related to the [author](http://schema.org/author) attribute; it can be used interchangeably.
--   **Example:** `"creator": [{"@id": "http://orcid.org/0000-0003-0791-7164"}, {"@id": "http://orcid.org/0000-0002-3221-9512"}, {"@id": "http://orcid.org/0000-0003-2338-4636"}],`
+- **Description:** Creator of the FDO.
+- **Type:**
+    - [Organization](http://schema.org/Organization)
+    - [Person](http://schema.org/Person)
+- **Cardinality:** 1/many
+- **Comments:** If possible, use an ORCiD or ROR ID, otherwise use full name in natural order. Closely related to the [author](http://schema.org/author) attribute; it can be used interchangeably.
+- **Example:** `"creator": [{"@id": "http://orcid.org/0000-0003-0791-7164"}, {"@id": "http://orcid.org/0000-0002-3221-9512"}, {"@id": "http://orcid.org/0000-0003-2338-4636"}],`
 
 ---
 
 **[keywords](https://schema.org/keywords)**
 
--   **Description:** A comma-separated list of keywords or tags used to describe some item.
--   **Type:** [Text](https://schema.org/Text)
--   **Cardinality:** 1/many
--   **Comments:**
--   **Example:** `"keywords": ["bioacoustics", "bird sound recognition", "deep learning"]`
+- **Description:** A comma-separated list of keywords or tags used to describe some item.
+- **Type:** [Text](https://schema.org/Text)
+- **Cardinality:** 1/many
+- **Comments:**
+- **Example:** `"keywords": ["bioacoustics", "bird sound recognition", "deep learning"]`
 
 ---
 
 #### Example Metadata File (`ro-crate-metadata.json`)
+
+Below you can find an example RO-Crate metadata file including the kernel attributes. An empty template metadata file is also available through [this link](https://github.com/BioDT/biodt-fair/blob/main/docs/metadata_profiles/examples/kernel_template_ro-crate.json).
 
 _Note: simplified from the [Dataset](dataset) example by excluding dataset-specific attributes._
 

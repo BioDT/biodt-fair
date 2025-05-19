@@ -1,0 +1,79 @@
+{
+    "@context": ["https://w3id.org/ro/crate/1.1"],
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": { "@id": "./" },
+            "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" }
+        },
+        {
+            "@id": "./",
+            "@type": ["Dataset", "SoftwareApplication"],
+            "identifier": "",
+            "name": "",
+            "description": "",
+            "conformsTo": "https://biodt.github.io/biodt-fair/metadata_profiles/model",
+            "dateCreated": "",
+            "license": { "@id": "" },
+            "author": [{ "@id": "" }],
+            "codeRepository": "",
+            "contributors": [{ "@id": "" }],
+            "softwareVersion": "0.1.",
+            "programmingLanguage": "",
+            "softwareRequirements": ["", "", ""],
+            "supportingData": [{ "@id": "" }]
+        },
+        {
+            "@id": "",
+            "@type": "DataFeed",
+            "name": "",
+            "description": "",
+            "variableMeasured": "",
+            "measurementTechnique": "",
+            "spatialCoverage": { "@id": "" },
+            "temporalCoverage": "",
+            "encodingFormat": "",
+            "contentSize": "",
+            "version": "",
+            "publisher": ""
+        },
+        {
+            "@id": "",
+            "@type": "Place",
+            "name": "",
+            "description": "",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "",
+                "longitude": "",
+                "name": ""
+            }
+        },
+        {
+            "@id": "",
+            "@type": "Person",
+            "name": "",
+            "email": "",
+            "affiliation": { "@id": "" }
+        },
+        {
+            "@id": "",
+            "@type": "Person",
+            "name": "",
+            "affiliation": { "@id": "" }
+        },
+        {
+            "@id": "",
+            "@type": "Organization",
+            "name": "",
+            "url": ""
+        },
+        {
+            "@id": "",
+            "@type": "CreativeWork",
+            "name": "License...",
+            "description": ""
+        }
+    ]
+}

@@ -8,18 +8,18 @@ Workflows might be one of the less intuitive FDOs and can be understood in diffe
 
 > Here are some indicators for when a script should be considered a _workflow_:
 >
-> -   It performs a series of steps (_pipeline_)
-> -   The executed steps are mainly external tools or services
-> -   The main work is performed by the steps (script is not algorithmic)
-> -   The steps exchange data in a _dataflow_, typically file inputs/outputs
-> -   The script has well-defined _inputs_ and _outputs_, e.g. file arguments
+> - It performs a series of steps (_pipeline_)
+> - The executed steps are mainly external tools or services
+> - The main work is performed by the steps (script is not algorithmic)
+> - The steps exchange data in a _dataflow_, typically file inputs/outputs
+> - The script has well-defined _inputs_ and _outputs_, e.g. file arguments
 >
 > Here are some counter-indicators for when a script might **not** be a workflow:
 >
-> -   The script contains mainly algorithms or logic
-> -   Data is exchanged out of bands, e.g. a SQL database
-> -   The script relies on a particular state of the system (e.g. appends existing files)
-> -   An interactive user interface that controls the actions
+> - The script contains mainly algorithms or logic
+> - Data is exchanged out of bands, e.g. a SQL database
+> - The script relies on a particular state of the system (e.g. appends existing files)
+> - An interactive user interface that controls the actions
 
 ##### Computational Workflows
 
@@ -27,9 +27,9 @@ Following RO-Crate's guidelines, we are using [Bioschema's `ComputationalWorkflo
 
 RO-Crate requires alignment with `ComputationalWorkflow`, but it also extends it with some additional features in the [Workflow Profile](https://about.workflowhub.eu/Workflow-RO-Crate/). These are mostly specific to how the RO-Crate should be structured. Lastly, there are some more specialised profiles, like those from [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/). These go beyond the general RO-Crate guidelines and include 3 separate profiles for capturing the provenance of an execution of a computational workflow with increasing granularity:
 
--   [Process Run Crate](https://www.researchobject.org/workflow-run-crate/profiles/process_run_crate) can be used to describe the execution of one or more tools that contribute to the same computation;
--   [**Workflow Run Crate**](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate) is similar to Process Run Crate, but assumes that the coordinated execution of the tools is driven by a `ComputationalWorkflow`;
--   [Provenance Run Crate](https://www.researchobject.org/workflow-run-crate/profiles/provenance_run_crate) extends Workflow Run Crate with guidelines for describing the internal details of each step of the workflow.
+- [Process Run Crate](https://www.researchobject.org/workflow-run-crate/profiles/process_run_crate) can be used to describe the execution of one or more tools that contribute to the same computation;
+- [**Workflow Run Crate**](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate) is similar to Process Run Crate, but assumes that the coordinated execution of the tools is driven by a `ComputationalWorkflow`;
+- [Provenance Run Crate](https://www.researchobject.org/workflow-run-crate/profiles/provenance_run_crate) extends Workflow Run Crate with guidelines for describing the internal details of each step of the workflow.
 
 From the previous three profiles, **Workflow Run Crate** is probably the right balance. **Process** doesn't necessarily align with the `ComputationalWorkflow`, while **Provenance** adds too much detailed and and might hinder implementation.
 
@@ -43,73 +43,75 @@ Format: the name of each metadata attribute includes a link to [Schema.org](http
 
 **[input](https://bioschemas.org/properties/input)**
 
--   **Description:** An input required to use the computational workflow (eg. Excel spreadsheet, BAM file)
--   **Type:** [FormalParameter](https://bioschemas.org/FormalParameter/)
--   **Cardinality:** 1/many
--   **Comments:** This could be a dataset, some files, or some parameters.
--   **Example:** `{ "@type": "FormalParameter", "name": "filter_rrna", "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE", "valueRequired": true }`
+- **Description:** An input required to use the computational workflow (eg. Excel spreadsheet, BAM file)
+- **Type:** [FormalParameter](https://bioschemas.org/FormalParameter/)
+- **Cardinality:** 1/many
+- **Comments:** This could be a dataset, some files, or some parameters.
+- **Example:** `{ "@type": "FormalParameter", "name": "filter_rrna", "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE", "valueRequired": true }`
 
 ---
 
 **[output](https://bioschemas.org/properties/output)**
 
--   **Description:** The result produced by the execution of the workflow.
--   **Type:** [FormalParameter](https://bioschemas.org/FormalParameter/)
--   **Cardinality:** 1/many
--   **Comments:**
--   **Example:** `{ "@type": "FormalParameter", "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE", "name": "x1" }`
+- **Description:** The result produced by the execution of the workflow.
+- **Type:** [FormalParameter](https://bioschemas.org/FormalParameter/)
+- **Cardinality:** 1/many
+- **Comments:**
+- **Example:** `{ "@type": "FormalParameter", "dct:conformsTo": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE", "name": "x1" }`
 
 ---
 
 **[version](http://schema.org/version)**
 
--   **Description:** The version of the workflow instance.
--   **Type:**
-    -   [Number](http://schema.org/Number)
-    -   [Text](http://schema.org/Text)
--   **Cardinality:** 1/1
--   **Comments:** It is advised to follow the [semantic versioning](https://semver.org/) guidelines.
--   **Example:** `"version" : 1`
+- **Description:** The version of the workflow instance.
+- **Type:**
+    - [Number](http://schema.org/Number)
+    - [Text](http://schema.org/Text)
+- **Cardinality:** 1/1
+- **Comments:** It is advised to follow the [semantic versioning](https://semver.org/) guidelines.
+- **Example:** `"version" : 1`
 
 ---
 
 **[programmingLanguage](https://schema.org/programmingLanguage)**
 
--   **Description:** The computer programming language the code is written in.
--   **Type:**
-    -   [ComputerLanguage](http://schema.org/ComputerLanguage)
-    -   [Text](http://schema.org/Text)
--   **Cardinality:** 1/many
--   **Comments:**
--   **Example:** `"programmingLanguage": "Galaxy"`
+- **Description:** The computer programming language the code is written in.
+- **Type:**
+    - [ComputerLanguage](http://schema.org/ComputerLanguage)
+    - [Text](http://schema.org/Text)
+- **Cardinality:** 1/many
+- **Comments:**
+- **Example:** `"programmingLanguage": "Galaxy"`
 
 ---
 
 **[url](http://schema.org/url)**
 
--   **Description:** Link to the repository or repositories where the un-compiled, human-readable code is located.
--   **Type:** [URL](http://schema.org/URL)
--   **Cardinality:** 1/1
--   **Comments:**
--   **Example:** `"url": "https://covid19.workflowhub.eu/workflows/10"`
+- **Description:** Link to the repository or repositories where the un-compiled, human-readable code is located.
+- **Type:** [URL](http://schema.org/URL)
+- **Cardinality:** 1/1
+- **Comments:**
+- **Example:** `"url": "https://covid19.workflowhub.eu/workflows/10"`
 
 ---
 
 **[sdPublisher](http://schema.org/sdPublisher)**
 
--   **Description:** The host site for the ComputationalWorkflow.
--   **Type:**
-    -   [Organization](http://schema.org/Organization)
-    -   [Person](http://schema.org/Person)
--   **Cardinality:** 1/1
--   **Comments:** Useful to make explicit the cases where the structured data is derived automatically from existing published content.
--   **Example:** `"sdPublisher": ["https://www.workflowhub.eu"]`
+- **Description:** The host site for the ComputationalWorkflow.
+- **Type:**
+    - [Organization](http://schema.org/Organization)
+    - [Person](http://schema.org/Person)
+- **Cardinality:** 1/1
+- **Comments:** Useful to make explicit the cases where the structured data is derived automatically from existing published content.
+- **Example:** `"sdPublisher": ["https://www.workflowhub.eu"]`
 
 ---
 
 Apart from the mandatory attributes above, the [`ComputationalWorkflow` profile](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) from Bioschemas includes many other recommended and optional attributes that add further details. Likewise, the [Workflow Run Crate](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate) provide a more fitting profile for capturing the _execution_ of a workflow. We refer to the official profiles for those.
 
 #### Example Metadata File (`ro-crate-metadata.json`)
+
+Below you can find an example RO-Crate metadata file conforming to the workflow profile. An empty template metadata file is also available through [this link](https://github.com/BioDT/biodt-fair/blob/main/docs/metadata_profiles/examples/workflow_template_ro-crate.json).
 
 ```json
 {

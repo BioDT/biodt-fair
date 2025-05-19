@@ -87,6 +87,8 @@ Format: the name of each metadata attribute includes a link to [Schema.org](http
 
 #### Example Metadata File (`ro-crate-metadata.json`)
 
+Below you can find an example RO-Crate metadata file conforming to the model profile. An empty template metadata file is also available through [this link](https://github.com/BioDT/biodt-fair/blob/main/docs/metadata_profiles/examples/model_template_ro-crate.json).
+
 ```json
 {
     "@context": ["https://w3id.org/ro/crate/1.1"],
