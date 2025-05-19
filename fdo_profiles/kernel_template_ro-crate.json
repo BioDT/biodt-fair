@@ -1,0 +1,53 @@
+{
+    "@context": ["https://w3id.org/ro/crate/1.1/context"],
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "identifier": "",
+            "name": "",
+            "description": "",
+            "conformsTo": "",
+            "license": {
+                "@id": ""
+            },
+            "dateCreated": "",
+            "creator": {
+                "@id": ""
+            },
+            "keywords": ["", ""]
+        },
+        {
+            "@id": "",
+            "@type": "Person",
+            "name": "",
+            "affiliation": [
+                {
+                    "@id": ""
+                }
+            ]
+        },
+        {
+            "@id": "",
+            "@type": "Organisation",
+            "name": "",
+            "url": ""
+        },
+        {
+            "@id": "",
+            "@type": "CreativeWork",
+            "name": "License...",
+            "description": ""
+        }
+    ]
+}

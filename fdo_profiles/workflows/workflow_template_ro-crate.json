@@ -1,0 +1,86 @@
+{
+    "@context": ["https://w3id.org/ro/crate/1.1/context"],
+    "@graph": [
+        {
+            "@type": "CreativeWork",
+            "@id": "ro-crate-metadata.json",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "",
+            "@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"],
+            "conformsTo": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE",
+            "name": "",
+            "description": "",
+            "dateCreated": "",
+            "license": {
+                "@id": ""
+            },
+            "creator": [
+                {
+                    "@id": ""
+                }
+            ],
+            "keywords": "",
+            "url": "",
+            "programmingLanguage": { "@id": "" },
+            "version": "",
+            "sdPublisher": "",
+            "input": [
+                {
+                    "@id": ""
+                }
+            ],
+            "output": { "@id": "" }
+        },
+        {
+            "@id": "",
+            "@type": ["File", "SoftwareSourceCode"],
+            "name": "",
+            "description": "",
+            "programmingLanguage": { "@id": "" }
+        },
+        {
+            "@id": "",
+            "@type": "Dataset",
+            "name": "",
+            "description": "",
+            "studySubject": [""]
+        },
+        {
+            "@id": "#sdPublisher...",
+            "@type": "Dataset",
+            "hasPart": [{ "@id": "" }]
+        },
+        {
+            "@id": "",
+            "@type": "Organization",
+            "name": "",
+            "url": ""
+        },
+        {
+            "@type": "Person",
+            "@id": "",
+            "name": "",
+            "affiliation": { "@id": "" }
+        },
+        {
+            "@id": "",
+            "@type": "ProgrammingLanguage",
+            "name": "",
+            "url": "",
+            "version": ""
+        },
+        {
+            "@id": "",
+            "@type": "CreativeWork",
+            "name": "License...",
+            "description": ""
+        }
+    ]
+}
