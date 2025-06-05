@@ -1,0 +1,59 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Biodiversity",
+    "author": [
+        {
+            "id": "https://orcid.org/0000-0003-0401-5122",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Naturalis Biodiversity Center"
+            },
+            "email": "julian.lopezgordillo@naturalis.nl",
+            "familyName": "Lopez Gordillo",
+            "givenName": "Julian"
+        }
+    ],
+    "codeRepository": "https://github.com/BioDT/biodt-fair",
+    "contributor": [
+        {
+            "id": "https://orcid.org/0000-0001-8050-0299",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Naturalis Biodiversity Center"
+            },
+            "email": "sharif.islam@naturalis.nl",
+            "familyName": "Islam",
+            "givenName": "Sharif"
+        },
+        {
+            "id": "https://orcid.org/0000-0002-0655-3699",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Environment Agency Austria"
+            },
+            "email": "christoph.wohner@umweltbundesamt.at",
+            "familyName": "Wohner",
+            "givenName": "Christoph"
+        }
+    ],
+    "description": "Documentation, resources, and other materials related to FAIR and open science from the BioDT project.",
+    "funder": {
+        "type": "Organization",
+        "name": "European Comission"
+    },
+    "keywords": [
+        "biodiversity",
+        "fair",
+        "digital-twin",
+        "ro-crate"
+    ],
+    "license": "https://spdx.org/licenses/EUPL-1.2",
+    "name": "biodt-fair",
+    "programmingLanguage": "Python 3",
+    "developmentStatus": "inactive",
+    "funding": "HORIZON-RIA"
+}S

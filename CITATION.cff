@@ -1,0 +1,37 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: biodt-fair
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Julian
+    family-names: Lopez Gordillo
+    email: julian.lopezgordillo@naturalis.nl
+    affiliation: Naturalis Biodiversity Center
+    orcid: 'https://orcid.org/0000-0003-0401-5122'
+  - given-names: Sharif
+    family-names: Islam
+    email: sharif.islam@naturalis.nl
+    affiliation: Naturalis Biodiversity Center
+    orcid: 'https://orcid.org/0000-0001-8050-0299'
+  - given-names: Christoph
+    family-names: Wohner
+    orcid: 'https://orcid.org/0000-0002-0655-3699'
+    email: christoph.wohner@umweltbundesamt.at
+    affiliation: Environment Agency Austria
+repository-code: 'https://github.com/BioDT/biodt-fair'
+url: 'https://biodt.github.io/biodt-fair/'
+abstract: >-
+  Documentation, resources, and other materials related to
+  FAIR and open science from the BioDT project.
+keywords:
+  - biodiversity
+  - fair
+  - digital-twin
+  - ro-crate
+  - open-science
+license: EUPL-1.2
