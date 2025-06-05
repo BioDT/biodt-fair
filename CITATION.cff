@@ -23,6 +23,9 @@ authors:
     orcid: 'https://orcid.org/0000-0002-0655-3699'
     email: christoph.wohner@umweltbundesamt.at
     affiliation: Environment Agency Austria
+identifiers:
+  - type: swh
+    value: 'swh:1:dir:d7503dfd028fc233b929dd5fdd3e5bee3dd90805'
 repository-code: 'https://github.com/BioDT/biodt-fair'
 url: 'https://biodt.github.io/biodt-fair/'
 abstract: >-
