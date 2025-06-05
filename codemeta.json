@@ -45,15 +45,10 @@
         "type": "Organization",
         "name": "European Comission"
     },
-    "keywords": [
-        "biodiversity",
-        "fair",
-        "digital-twin",
-        "ro-crate"
-    ],
+    "keywords": ["biodiversity", "fair", "digital-twin", "ro-crate"],
     "license": "https://spdx.org/licenses/EUPL-1.2",
     "name": "biodt-fair",
     "programmingLanguage": "Python 3",
     "developmentStatus": "inactive",
     "funding": "HORIZON-RIA"
-}S
+}
